@@ -1,0 +1,163 @@
+/* Mission HUD that opens when a planet is clicked. Laid out in the chart's own
+   1920 x 1080 space, so it stays locked to the planet at every window size. */
+.planet-hud{--gold:#f6bf1f;--gold-soft:#ffe08a;--red:#ff4b57;--ink:#eef3f4;--mute:#9fb0b8;--line:#7fa3b433;position:absolute;inset:0;z-index:9;pointer-events:none;opacity:0;color:var(--ink);font-family:'Chakra Petch','Rajdhani',Roboto,'Arial Narrow',sans-serif;text-transform:uppercase;letter-spacing:.06em}
+.planet-hud button{cursor:inherit}
+.planet-hud .hud-ui{pointer-events:auto}
+.planet-hud h1,.planet-hud h2,.planet-hud h3,.planet-hud h4,.planet-hud p{margin:0;font-weight:inherit}
+
+/* Compass tabs */
+.hud-tabs{position:absolute;left:50%;top:22px;transform:translateX(-50%);display:flex;gap:84px;white-space:nowrap}
+.hud-tabs button{position:relative;padding:8px 6px 12px;font-size:19px;letter-spacing:.18em;color:#8fa4ad;transition:color .15s}
+.hud-tabs button:hover{color:#dfe8eb}
+.hud-tabs button.on{color:#fff}
+.hud-tabs button.on:after{content:'';position:absolute;left:50%;bottom:0;width:46px;height:2px;margin-left:-23px;background:var(--gold);box-shadow:0 0 9px var(--gold)}
+
+/* Title */
+.hud-title{position:absolute;left:0;right:0;top:66px;text-align:center;pointer-events:none}
+.hud-title-icon{display:block;width:24px;height:24px;margin:0 auto 8px;color:#dfe9ec}
+.hud-title-row{display:flex;align-items:center;justify-content:center;gap:26px}
+.hud-title h1{font-size:40px;line-height:1.02;font-weight:600;letter-spacing:.17em;margin-right:-.17em;text-shadow:0 2px 14px #000c}
+.hud-title h1 span{display:block}
+.hud-bars{display:flex;align-items:center;gap:7px}
+.hud-bars i{display:block;height:3px;background:#d7e2e6;opacity:.9}
+.hud-bars.left i:nth-child(1){width:22px;opacity:.28}.hud-bars.left i:nth-child(2){width:22px;opacity:.42}.hud-bars.left i:nth-child(3){width:46px;opacity:.75}.hud-bars.left i:nth-child(4){width:58px}
+.hud-bars.right{flex-direction:row-reverse}
+.hud-bars.right i:nth-child(1){width:22px;opacity:.28}.hud-bars.right i:nth-child(2){width:22px;opacity:.42}.hud-bars.right i:nth-child(3){width:46px;opacity:.75}.hud-bars.right i:nth-child(4){width:58px}
+.hud-title p{margin-top:9px;font-size:16px;color:#a8b7be;letter-spacing:.12em}
+
+/* Left column */
+.hud-left{position:absolute;left:38px;top:166px;width:412px;max-height:830px;overflow:hidden auto;scrollbar-width:none}
+.hud-left::-webkit-scrollbar{display:none}
+.hud-head{display:flex;align-items:center;height:36px;font-size:22px;letter-spacing:.2em;color:#fff}
+.hud-head i{display:none}
+.hud-banner{position:relative;margin-top:14px;height:196px;overflow:hidden;border:1px solid #6d8f9d55;background:radial-gradient(ellipse at 72% 30%,#b0377f66,transparent 55%),radial-gradient(ellipse at 20% 90%,#1d6e8b66,transparent 60%),linear-gradient(160deg,#16283a,#0a1420);box-shadow:inset 0 0 40px #0008}
+.hud-banner:before,.hud-banner:after{content:'';position:absolute;width:18px;height:18px;border:2px solid #d9e6ea;pointer-events:none;z-index:2}
+.hud-banner:before{left:-1px;top:-1px;border-right:0;border-bottom:0}
+.hud-banner:after{right:-1px;bottom:-1px;border-left:0;border-top:0}
+.hud-banner img{position:absolute;right:-30px;top:50%;width:300px;height:300px;margin-top:-150px;object-fit:contain;mix-blend-mode:screen}
+.hud-banner div{position:absolute;left:16px;bottom:12px;z-index:2}
+.hud-banner h2{font-size:38px;line-height:1;font-weight:600;letter-spacing:.07em;text-shadow:0 2px 10px #000b}
+.hud-banner small{display:block;margin-top:6px;font-size:13px;letter-spacing:.1em;color:#c3d3d9}
+.hud-label{display:flex;align-items:center;gap:10px;margin:22px 0 10px;font-size:17px;font-weight:700;letter-spacing:.16em}
+.hud-label i{width:11px;height:11px;background:radial-gradient(circle,#fff 0 1.5px,transparent 2px) 0 0/5.5px 5.5px;opacity:.8}
+.hud-copy{font-size:15.5px;line-height:1.55;letter-spacing:.04em;text-transform:none;color:#b8c7cd}
+.hud-rule{height:1px;margin:18px 0 8px;background:linear-gradient(90deg,#fff7,#fff0)}
+.hud-objective{display:flex;gap:14px;padding:12px 0 10px;align-items:flex-start}
+.hud-objective svg{flex:none;width:28px;height:28px;margin-top:-2px}
+.hud-objective b{display:block;font-size:19px;letter-spacing:.12em;margin-bottom:5px}
+.hud-objective p{font-size:15px;line-height:1.5;letter-spacing:.03em;text-transform:none;color:#aebdc4}
+.hud-objective.primary{color:var(--gold)}.hud-objective.secondary{color:#ffcf5a}.hud-objective.optional{color:#58d3ee}
+.hud-objective b{color:inherit}
+.hud-list{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:2px}
+.hud-list button{display:flex;align-items:center;gap:12px;width:100%;padding:9px 12px;text-align:left;font-size:16px;letter-spacing:.1em;border:1px solid transparent;color:#cfdce1;transition:background .12s,border-color .12s}
+.hud-list button:hover{background:#1c3d4c66}
+.hud-list button.on{background:#f6bf1f1c;border-color:#f6bf1f77;color:var(--gold-soft)}
+.hud-list svg{flex:none;width:22px;height:22px;color:#e8eef0}
+.hud-list button.on svg{color:var(--gold)}
+.hud-list small{display:block;margin-top:2px;font-size:11.5px;letter-spacing:.16em;color:#7f949d}
+.hud-list em{margin-left:auto;font-style:normal;font-size:11px;letter-spacing:.14em;color:#5fe39a}
+.hud-list.supplies li>div{display:flex;align-items:center;justify-content:space-between;padding:12px;border-bottom:1px solid #7fa3b422;font-size:16px;letter-spacing:.1em}
+.hud-list.supplies strong{font-size:24px;font-weight:600;color:var(--gold-soft)}
+
+/* Leader line from the MISSION heading to the selected waypoint */
+.hud-leader{position:absolute;left:0;top:0;overflow:visible;pointer-events:none}
+.hud-leader polyline{fill:none;stroke:#eaf2f4;stroke-width:1.5;stroke-linejoin:round;filter:drop-shadow(0 0 3px #0008)}
+
+/* Right column */
+.hud-right{position:absolute;right:34px;top:166px;width:418px;display:grid;gap:15px;align-content:start}
+.hud-card{position:relative;padding:14px 16px 15px;background:linear-gradient(180deg,#112636d9,#0a1822c4);border:1px solid #7fa3b43d;box-shadow:inset 0 0 0 1px #0007,0 10px 30px #0005;backdrop-filter:blur(3px);overflow:hidden}
+.hud-card:after{content:'';position:absolute;right:0;top:0;width:52%;height:34px;background:repeating-linear-gradient(135deg,#9bd36a40 0 7px,transparent 7px 14px);-webkit-mask-image:linear-gradient(90deg,transparent,#000);mask-image:linear-gradient(90deg,transparent,#000);pointer-events:none}
+.hud-card h4{position:relative;z-index:1;display:flex;align-items:center;gap:9px;font-size:16px;font-weight:600;letter-spacing:.16em}
+.hud-card h4 i{width:11px;height:11px;background:radial-gradient(circle,#fff 0 1.5px,transparent 2px) 0 0/5.5px 5.5px;opacity:.85}
+.hud-card h4 small{margin-left:auto;font-size:11.5px;font-weight:400;letter-spacing:.08em;color:#d99a92}
+.hud-card h4 b{font-weight:700}
+.hud-card p{position:relative;z-index:1;margin-top:9px;font-size:14.5px;line-height:1.45;letter-spacing:.03em;text-transform:none}
+.hud-icon{flex:none;width:21px;height:21px;fill:currentColor}
+.coord-tag{position:relative;z-index:1;margin:10px 0 0 21px;display:inline-block;padding:3px 12px;background:#f3f6f6;color:#0a141a;font-size:13px;font-weight:600;letter-spacing:.06em}
+.hud-terrain{display:block;width:100%;height:104px;margin-top:-8px}
+.hud-terrain .grid path{fill:none;stroke:#35e08a;stroke-opacity:.2;stroke-width:.7}
+.hud-terrain .area{fill:url(#terrain-fill)}
+.hud-terrain .ridge{fill:none;stroke:#46f59a;stroke-width:1.4;filter:drop-shadow(0 0 3px #46f59a99)}
+.hud-terrain .pin path{stroke:#05100c;stroke-width:1.2}
+.hud-terrain .pin.red path{fill:#ff4b57}.hud-terrain .pin.green path{fill:#2fe590;filter:drop-shadow(0 0 4px #2fe590aa)}
+.hud-terrain .pin-face{fill:#f1f4f4}.hud-terrain .pin.red circle:not(.pin-face){fill:#14090b}
+.hud-terrain .pin.green .pin-face{fill:#06160e}
+.hud-meter{position:relative;height:13px;margin:13px 0 8px;background:#0b1a24;border:1px solid #7fa3b444}
+.hud-meter b{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,#d99b12,#ffd33e);box-shadow:0 0 10px #f6bf1f66}
+.hud-meter:after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 11px,#07131b99 11px 13px)}
+.hud-meter i{position:absolute;top:50%;width:0;height:0;margin:-5px 0 0 6px;border:5px solid transparent;border-left:7px solid #4ae28f;border-right:0;z-index:1}
+.hud-meta{display:flex;justify-content:space-between;align-items:baseline;font-size:15px;letter-spacing:.08em;margin-top:3px}
+.hud-meta small{font-size:11.5px;letter-spacing:.06em;color:#9bacb3;text-transform:none}
+.hud-card.warn{background:linear-gradient(180deg,#2c1214d9,#1a0b0dc4);border-color:#a8393b77}
+.hud-card.warn:after{background:repeating-linear-gradient(135deg,#ff5a4f45 0 7px,transparent 7px 14px)}
+.hud-card.warn h4{color:#ff5a4f}.hud-card.warn p{color:#ff8a80}.hud-card.warn p b{color:#ff5a4f;font-weight:700}
+.hud-card.danger{background:linear-gradient(180deg,#2a1114d9,#190b0dc4);border-color:#a8393b77}
+.hud-card.danger:after{display:none}
+.hud-card.danger h4{color:#ff5a4f;font-weight:500}
+.hud-segments{display:flex;gap:8px;margin:14px 0 12px}
+.hud-segments i{flex:1;height:12px;background:#47232844}
+.hud-segments i.on{background:var(--red);box-shadow:0 0 9px #ff4b5766}
+.hud-flag{display:flex;align-items:center;gap:8px;color:#ff5a4f;font-size:17px;font-weight:700;letter-spacing:.14em}
+
+/* Start / back / select */
+.hud-start{position:absolute;left:50%;bottom:26px;margin-left:-190px;width:380px;padding:8px 0}
+.hud-start:before,.hud-start:after{content:'';position:absolute;left:50%;width:46px;height:2px;margin-left:-23px;background:#e8eff1;opacity:.75}
+.hud-start:before{top:-6px}.hud-start:after{bottom:-6px}
+.hud-start button{display:block;width:100%;height:64px;font-size:25px;font-weight:700;letter-spacing:.14em;color:#201603;background:linear-gradient(180deg,#ffd740,#eba718);border:1px solid #ffe38f;border-radius:4px;box-shadow:0 0 0 3px #00000066,0 0 26px #f6bf1f66,inset 0 1px 0 #fff8;transition:filter .12s,transform .12s,box-shadow .12s}
+.hud-start button:hover:not(:disabled){filter:brightness(1.08);box-shadow:0 0 0 3px #00000066,0 0 38px #f6bf1faa,inset 0 1px 0 #fff8}
+.hud-start button:active:not(:disabled){transform:translateY(1px)}
+.hud-start button:disabled{filter:grayscale(.8) brightness(.55)}
+.hud-key{position:absolute;bottom:26px;display:flex;align-items:center;gap:10px;padding:5px 10px;font-size:17px;letter-spacing:.14em;color:#e8eff1;background:#0c18227a;border:1px solid #7fa3b422}
+.hud-key.back{left:34px}.hud-key.select{right:34px}
+.hud-key:hover{background:#1c3d4c88}
+.hud-key kbd{display:grid;place-items:center;min-width:34px;height:26px;padding:0 6px;font:700 14px 'Chakra Petch',Roboto,sans-serif;letter-spacing:.04em;color:#0a141a;background:#f3f6f6}
+.hud-key.select kbd{width:34px;background:#f1f3f2}
+.hud-key.select kbd i{width:12px;height:12px;background:var(--gold);box-shadow:-5px -5px 0 -1px #0a141a,5px 5px 0 -1px #0a141a}
+
+/* The chart's own HUD steps aside while a planet is open */
+.stage.focused .hud,.stage.focused .chat-bar,.stage.focused .footer,.stage.focused .planet-title{opacity:0;visibility:hidden;transition:opacity .2s,visibility 0s .2s}
+.stage.focused .planet-title{display:none}
+
+/* Orbit ring, compass markers, dashed arcs */
+.connections .hud-ornaments .halo{fill:none;stroke:#a6d8ea;stroke-opacity:.15;stroke-width:1.2;vector-effect:non-scaling-stroke}
+.connections .hud-ornaments .dash{fill:none;stroke:#eaf1f3;stroke-opacity:.72;stroke-width:1.5;stroke-dasharray:13 10;stroke-linecap:butt;vector-effect:non-scaling-stroke}
+.connections .hud-ornaments .dash.fine{stroke-dasharray:3 8;stroke-opacity:.5}
+.connections .hud-ornaments .orbit-front{fill:none;stroke:var(--red,#ff4b57);stroke-opacity:1;stroke-width:3;filter:drop-shadow(0 0 5px #ff3b4acc)}
+.connections .hud-ornaments .orbit-back{fill:none;stroke:#ff4b57;stroke-opacity:.55;stroke-width:2}
+.connections .hud-ornaments .compass{fill:#f6bf1f;stroke:none;filter:drop-shadow(0 0 4px #f6bf1f88)}
+.connections .hud-ornaments .shield{fill:#f4f7f7;fill-opacity:.9;stroke:#0b161d;stroke-width:1;stroke-opacity:1}
+.hud-ornaments .dash-spin{transform-origin:900px 650px;animation:hud-spin 140s linear infinite}
+@keyframes hud-spin{to{transform:rotate(360deg)}}
+
+/* Waypoints, routes and transports on the focused planet */
+.mission-node .node-text{display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+.mission-node .node-coords{display:none}
+.stage.focused .mission-node .node-coords{display:block;margin:0 0 0 -7px;font:500 11.5px/13px 'Chakra Petch',Roboto,sans-serif;letter-spacing:.04em;text-transform:uppercase;color:#e9f0f2;text-shadow:0 1px 3px #000,0 0 6px #000a;opacity:calc(var(--node-text-opacity,1)*.85)}
+.stage.focused .mission-node .node-label{font:600 13px/16px 'Chakra Petch',Roboto,sans-serif;letter-spacing:.12em;text-transform:uppercase;margin-left:-7px;padding:0 4px;background:#0a141cb8}
+.stage.focused .mission-node:not(.travel):not(.junction):not(.picked):not(.active) .node-label{display:none}
+.stage.focused .mission-node .node-marker{width:34px;height:34px}
+.stage.focused .mission-node .marker-mission .marker-shadow{fill:#162631;stroke:#e1eaed;stroke-width:1.5}
+.stage.focused .mission-node .marker-mission .marker-fill{fill:#b9c8ce}
+.stage.focused .mission-node.travel .node-marker,.stage.focused .mission-node.junction .node-marker{color:#f7c52a}
+.stage.focused .mission-node.travel .node-label,.stage.focused .mission-node.junction .node-label{color:#ffdf85}
+.stage.focused .mission-node.travel .node-coords,.stage.focused .mission-node.junction .node-coords{display:none}
+.stage.focused .mission-node.picked .node-marker{transform:scale(1.32);filter:drop-shadow(0 0 7px #f6bf1fcc)}
+.stage.focused .mission-node.picked .marker-mission .marker-shadow,.stage.focused .mission-node.picked .marker-dark .marker-frame,.stage.focused .mission-node.picked .marker-boss .marker-frame,.stage.focused .mission-node.picked .marker-relay .marker-frame{fill:#f6bf1f;fill-opacity:1;stroke:#ffeaa6}
+.stage.focused .mission-node.picked .marker-mission .marker-fill{fill:#3a2600}
+.stage.focused .mission-node.picked .node-label{color:#ffe08a;background:#201705d0}
+.stage.focused .mission-node.picked .node-coords{color:#ffe08a}
+.stage.focused .mission-node.picked .node-pulse{animation:pulse-select 1500ms ease-out infinite}
+.stage.focused .mission-node.unrelated{opacity:1}
+.stage.focused .connections path.route{stroke-dasharray:7 8;stroke-width:1.3;stroke-opacity:.62}
+.stage.focused .connections path.route.dimmed{stroke-opacity:.2}
+.stage.focused .connections path.route.locked-route{stroke-dasharray:2 7;stroke-opacity:.3}
+.stage.focused .connections path.route.picked-route{stroke:#f6c331;stroke-dasharray:none;stroke-width:1.9;stroke-opacity:.95;filter:drop-shadow(0 0 4px #f6bf1f88)}
+.stage.focused .connections .remote-preview-lines path{stroke-dasharray:none}
+
+/* Open planet: a hand over the disc shows it can be grabbed and spun */
+.stage.over-planet{cursor:grab}
+.stage.spinning,.stage.spinning *{cursor:grabbing!important}
+.stage.over-planet .mission-node,.stage.over-planet .hud-ui{cursor:url('/assets/cursor-chart.svg') 1 1,default}
+
+@keyframes hud-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.planet-hud .hud-left,.planet-hud .hud-right,.planet-hud .hud-start{animation:hud-in .45s .12s cubic-bezier(.16,1,.3,1) both}

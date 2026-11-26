@@ -19,6 +19,7 @@
 .orbit-ring-5{opacity:.42}
 .orbit-ring-6{opacity:.37}
 .orbit-ring-7{opacity:.32}
+.orbit-ring-8{opacity:.27}
 .sun{z-index:3;background:radial-gradient(ellipse,#fff5cb 0%,#ffcf7d 5%,#ffc163a3 12%,#edaa4738 31%,transparent 67%);filter:drop-shadow(0 0 13px #f2b24b66)}
 .sun i{height:2px;top:49px;filter:blur(.5px)}
 .system-labels{z-index:5}
