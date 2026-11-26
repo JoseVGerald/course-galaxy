@@ -1,0 +1,5052 @@
+{
+  "Mercury": {
+    "source": "referacne-Frames/frame_027.jpg",
+    "cx": 1082,
+    "cy": 382,
+    "radius": 440,
+    "nodes": [
+      {
+        "name": "Boethius",
+        "x": -0.7931818181818182,
+        "y": -0.5011363636363636,
+        "type": "Mobile Defense",
+        "kind": "mission",
+        "level": "8–10",
+        "faction": "Infested",
+        "tileset": "Grineer Asteroid",
+        "to": null,
+        "links": [
+          "Apollodorus",
+          "M Prime"
+        ]
+      },
+      {
+        "name": "Suisei",
+        "x": 1.1045454545454545,
+        "y": -0.3261363636363636,
+        "type": "Spy",
+        "kind": "mission",
+        "level": "8–10",
+        "faction": "Grineer",
+        "tileset": "Grineer Galleon",
+        "to": null,
+        "links": [
+          "Odin",
+          "Tolstoj",
+          "Elion"
+        ]
+      },
+      {
+        "name": "Elion",
+        "x": 0.6477272727272727,
+        "y": 0.2761363636363636,
+        "type": "Capture",
+        "kind": "mission",
+        "level": "7–9",
+        "faction": "Grineer",
+        "tileset": "Grineer Asteroid",
+        "to": null,
+        "links": [
+          "Suisei",
+          "Caloris"
+        ]
+      },
+      {
+        "name": "Terminus",
+        "x": -0.5522727272727272,
+        "y": 0.34545454545454546,
+        "type": "Sabotage",
+        "kind": "mission",
+        "level": "8–10",
+        "faction": "",
+        "tileset": "Grineer Galleon",
+        "to": null,
+        "links": [
+          "Lares",
+          "M Prime"
+        ]
+      },
+      {
+        "name": "Larunda Relay",
+        "x": 1.2022727272727274,
+        "y": 0.49772727272727274,
+        "type": "Relay",
+        "kind": "mission",
+        "level": "0–0",
+        "faction": "Tenno",
+        "tileset": "Relay",
+        "to": null,
+        "links": [
+          "Mercury Junction"
+        ]
+      },
+      {
+        "name": "Caloris",
+        "x": -0.07727272727272727,
+        "y": 0.8886363636363637,
+        "type": "Rescue",
+        "kind": "mission",
+        "level": "6–8",
+        "faction": "Grineer",
+        "tileset": "Grineer Asteroid",
+        "to": null,
+        "links": [
+          "Elion",
+          "Pantheon"
+        ]
+      },
+      {
+        "name": "Pantheon",
+        "x": 0.6795454545454546,
+        "y": 0.9681818181818181,
+        "type": "Exterminate",
+        "kind": "mission",
+        "level": "6–8",
+        "faction": "Grineer",
+        "tileset": "Grineer Galleon",
+        "to": null,
+        "links": [
+          "Caloris",
+          "Mercury Junction"
+        ]
+      },
+      {
+        "name": "To Venus",
+        "x": 1.2136363636363636,
+        "y": 1.0454545454545454,
+        "type": "",
+        "kind": "travel",
+        "level": "",
+        "faction": "",
+        "tileset": "",
+        "to": "Venus",
+        "links": []
+      }
+    ],
+    "edges": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        5,
+        6
+      ]
+    ],
+    "title": false
+  },
+  "Venus": {
+    "source": "referacne-Frames/frame_075.jpg",
+    "cx": 870,
+    "cy": 605,
+    "radius": 350,
+    "nodes": [
+      {
+        "name": "Malva",
+        "x": -1.0771428571428572,
+        "y": -1.2971428571428572,
+        "type": "Survival",
+        "kind": "dark",
+        "level": "8–18",
+        "faction": "Infested",
+        "tileset": "Corpus Ship",
+        "to": null,
+        "links": [
+          "Ishtar"
+        ]
+      },
+      {
+        "name": "Montes",
+        "x": -0.5828571428571429,
+        "y": -1.282857142857143,
+        "type": "Exterminate",
+        "kind": "mission",
+        "level": "3–8",
+        "faction": "Corpus",
+        "tileset": "Corpus Ship (Archwing)",
+        "to": null,
+        "links": [
+          "Ishtar"
+        ]
+      },
+      {
+        "name": "Ishtar",
+        "x": -0.8085714285714286,
+        "y": -0.9914285714285714,
+        "type": "Sabotage",
+        "kind": "mission",
+        "level": "6–8",
+        "faction": "Corpus",
+        "tileset": "Corpus Ship",
+        "to": null,
+        "links": [
+          "Malva",
+          "Montes",
+          "Linea"
+        ]
+      },
+      {
+        "name": "Vesper Relay",
+        "x": 0.9228571428571428,
+        "y": -0.9,
+        "type": "Follie's Hunt",
+        "kind": "mission",
+        "level": "35–45",
+        "faction": "Tenno",
+        "tileset": "Relay",
+        "to": null,
+        "links": [
+          "Venus Junction"
+        ]
+      },
+      {
+        "name": "Linea",
+        "x": 0.3057142857142857,
+        "y": -0.7914285714285715,
+        "type": "Rescue",
+        "kind": "mission",
+        "level": "5–7",
+        "faction": "Corpus",
+        "tileset": "Corpus Outpost",
+        "to": null,
+        "links": [
+          "Ishtar",
+          "Tessera"
+        ]
+      },
+      {
+        "name": "Fossa",
+        "x": -1.1571428571428573,
+        "y": -0.4257142857142857,
+        "type": "Assassination",
+        "kind": "boss",
+        "level": "6–8",
+        "faction": "Corpus",
+        "tileset": "Corpus Ship",
+        "to": null,
+        "links": [
+          "Mercury Junction",
+          "Unda",
+          "Orb Vallis",
+          "Aphrodite"
+        ]
+      },
+      {
+        "name": "Tessera",
+        "x": 0.64,
+        "y": -0.43714285714285717,
+        "type": "Defense",
+        "kind": "mission",
+        "level": "3–8",
+        "faction": "Corpus",
+        "tileset": "Corpus Outpost",
+        "to": null,
+        "links": [
+          "Linea",
+          "Venera",
+          "E Gate"
+        ]
+      },
+      {
+        "name": "To Earth",
+        "x": 1.3314285714285714,
+        "y": -0.38142857142857145,
+        "type": "",
+        "kind": "travel",
+        "level": "",
+        "faction": "",
+        "tileset": "",
+        "to": "Earth",
+        "links": []
+      },
+      {
+        "name": "Venera",
+        "x": -0.6057142857142858,
+        "y": -0.31285714285714283,
+        "type": "Capture",
+        "kind": "mission",
+        "level": "5–7",
+        "faction": "Corpus",
+        "tileset": "Corpus Outpost",
+        "to": null,
+        "links": [
+          "Aphrodite",
+          "Tessera",
+          "Unda"
+        ]
+      },
+      {
+        "name": "To Mercury",
+        "x": -1.4628571428571429,
+        "y": -0.15285714285714286,
+        "type": "",
+        "kind": "travel",
+        "level": "",
+        "faction": "",
+        "tileset": "",
+        "to": "Mercury",
+        "links": []
+      },
+      {
+        "name": "E Gate",
+        "x": 0.92,
+        "y": -0.11428571428571428,
+        "type": "Exterminate",
+        "kind": "mission",
+        "level": "3–5",
+        "faction": "Corpus",
+        "tileset": "Corpus Outpost",
+        "to": null,
+        "links": [
+          "Tessera",
+          "Fortuna",
+          "Kiliken",
+          "Venus Junction"
+        ]
+      },
+      {
+        "name": "Mercury Junction",
+        "x": -1.2,
+        "y": -0.06571428571428571,
+        "type": "Solar Rail Junction",
+        "kind": "mission",
+        "level": "1–3",
+        "faction": "Tenno",
+        "tileset": "Solar Rail",
+        "to": null,
+        "links": [
+          "M Prime",
+          "Pantheon",
+          "Larunda Relay",
+          "Fossa"
+        ]
+      },
+      {
+        "name": "Aphrodite",
+        "x": -0.9542857142857143,
+        "y": -0.0014285714285714286,
+        "type": "Mobile Defense",
+        "kind": "mission",
+        "level": "6–8",
+        "faction": "Corpus",
+        "tileset": "Corpus Outpost",
+        "to": null,
+        "links": [
+          "Fossa",
+          "Cytherean",
+          "Kiliken"
+        ]
+      },
+      {
+        "name": "Unda",
+        "x": 0.17142857142857143,
+        "y": -0.007142857142857143,
+        "type": "Spy",
+        "kind": "mission",
+        "level": "4–6",
+        "faction": "Corpus",
+        "tileset": "Corpus Outpost",
+        "to": null,
+        "links": [
+          "Fossa",
+          "Venera"
+        ]
+      },
+      {
+        "name": "Kiliken",
+        "x": -0.21142857142857144,
+        "y": 0.3171428571428571,
+        "type": "Excavation",
+        "kind": "mission",
+        "level": "3–8",
+        "faction": "Corpus",
+        "tileset": "Corpus Outpost",
+        "to": null,
+        "links": [
+          "Aphrodite",
+          "E Gate"
+        ]
+      },
+      {
+        "name": "Cytherean",
+        "x": -0.8028571428571428,
+        "y": 0.71,
+        "type": "Interception",
+        "kind": "mission",
+        "level": "3–8",
+        "faction": "Corpus",
+        "tileset": "Corpus Ship",
+        "to": null,
+        "links": [
+          "Romula",
+          "V Prime",
+          "Aphrodite"
+        ]
+      },
+      {
+        "name": "Romula",
+        "x": -0.11428571428571428,
+        "y": 0.9085714285714286,
+        "type": "Defense",
+        "kind": "dark",
+        "level": "8–18",
+        "faction": "Infested",
+        "tileset": "Corpus Outpost",
+        "to": null,
+        "links": [
+          "Cytherean"
+        ]
+      },
+      {
+        "name": "V Prime",
+        "x": 0.74,
+        "y": 0.9014285714285715,
+        "type": "Survival",
+        "kind": "mission",
+        "level": "3–8",
+        "faction": "Corpus",
+        "tileset": "Corpus Ship",
+        "to": null,
+        "links": [
+          "Cytherean"
+        ]
+      }
+    ],
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        5,
+        11
+      ],
+      [
+        5,
+        12
+      ],
+      [
+        5,
+        13
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        6,
+        10
+      ],
+      [
+        8,
+        12
+      ],
+      [
+        8,
+        13
+      ],
+      [
+        10,
+        14
+      ],
+      [
+        12,
+        14
+      ],
+      [
+        12,
+        15
+      ],
+      [
+        15,
+        16
+      ],
+      [
+        15,
+        17
+      ]
+    ],
+    "title": true
+  },
+  "Earth": {
+    "source": "main referacne 2 (1).jpg",
+    "cx": 541,
+    "cy": 485,
+    "radius": 480,
+    "nodes": [
+      {
+        "name": "Eurasia",
+        "x": 0.3458333333333333,
+        "y": -0.7979166666666667,
+        "type": "Mobile Defense",
+        "kind": "mission",
+        "level": "3–5",
+        "faction": "Grineer",
+        "tileset": "Grineer Forest",
+        "to": null,
+        "links": [
+          "Mars Junction",
+          "Lith"
+        ]
+      },
+      {
+        "name": "Plains of Eidolon",
+        "x": 0.0125,
+        "y": -0.6239583333333333,
+        "type": "Free Roam",
+        "kind": "open",
+        "level": "10–30",
+        "faction": "Grineer",
+        "tileset": "Plains of Eidolon",
+        "to": null,
+        "links": [
+          "Everest",
+          "Cetus"
+        ]
+      },
+      {
+        "name": "Cetus",
+        "x": -0.12916666666666668,
+        "y": -0.521875,
+        "type": "Hub",
+        "kind": "mission",
+        "level": "0–0",
+        "faction": "Tenno",
+        "tileset": "Cetus",
+        "to": null,
+        "links": [
+          "Plains of Eidolon",
+          "Saya's Visions",
+          "Mantle"
+        ]
+      },
+      {
+        "name": "Coba",
+        "x": 0.7520833333333333,
+        "y": -0.465625,
+        "type": "Defense",
+        "kind": "dark",
+        "level": "6–16",
+        "faction": "Infested",
+        "tileset": "Grineer Forest",
+        "to": null,
+        "links": [
+          "Everest"
+        ]
+      },
+      {
+        "name": "Mariana",
+        "x": -0.69375,
+        "y": -0.3104166666666667,
+        "type": "Exterminate",
+        "kind": "mission",
+        "level": "1–3",
+        "faction": "Grineer",
+        "tileset": "Grineer Sealab",
+        "to": null,
+        "links": [
+          "Mantle",
+          "E Prime"
+        ]
+      },
+      {
+        "name": "Everest",
+        "x": 0.31875,
+        "y": -0.23958333333333334,
+        "type": "Excavation",
+        "kind": "mission",
+        "level": "1–6",
+        "faction": "Grineer",
+        "tileset": "Grineer Forest",
+        "to": null,
+        "links": [
+          "Cervantes",
+          "Coba",
+          "Plains of Eidolon"
+        ]
+      },
+      {
+        "name": "E Prime",
+        "x": -0.9833333333333333,
+        "y": -0.165625,
+        "type": "Exterminate",
+        "kind": "mission",
+        "level": "1–3",
+        "faction": "Grineer",
+        "tileset": "Grineer Forest",
+        "to": null,
+        "links": [
+          "Mariana"
+        ]
+      },
+      {
+        "name": "Cervantes",
+        "x": 0.8770833333333333,
+        "y": -0.09375,
+        "type": "Sabotage",
+        "kind": "mission",
+        "level": "4–6",
+        "faction": "Grineer",
+        "tileset": "Grineer Forest",
+        "to": null,
+        "links": [
+          "Erpo",
+          "Plato",
+          "Everest"
+        ]
+      },
+      {
+        "name": "Mantle",
+        "x": -0.4270833333333333,
+        "y": 0.019791666666666666,
+        "type": "Capture",
+        "kind": "mission",
+        "level": "2–4",
+        "faction": "Grineer",
+        "tileset": "Grineer Forest",
+        "to": null,
+        "links": [
+          "Cetus",
+          "Gaia",
+          "Mariana"
+        ]
+      },
+      {
+        "name": "Iron Wake",
+        "x": -0.8916666666666667,
+        "y": 0.05,
+        "type": "Hub",
+        "kind": "mission",
+        "level": "0–0",
+        "faction": "Tenno",
+        "tileset": "Grineer Forest",
+        "to": null,
+        "links": []
+      },
+      {
+        "name": "Tikal",
+        "x": 0.5020833333333333,
+        "y": 0.24270833333333333,
+        "type": "Excavation",
+        "kind": "dark",
+        "level": "6–16",
+        "faction": "Infested",
+        "tileset": "Grineer Forest",
+        "to": null,
+        "links": [
+          "Oro"
+        ]
+      },
+      {
+        "name": "Lith",
+        "x": -0.7333333333333333,
+        "y": 0.38333333333333336,
+        "type": "Defense",
+        "kind": "mission",
+        "level": "1–6",
+        "faction": "Grineer",
+        "tileset": "Grineer Forest",
+        "to": null,
+        "links": [
+          "Cambria",
+          "Mantle"
+        ]
+      },
+      {
+        "name": "Oro",
+        "x": 0.8770833333333333,
+        "y": 0.42291666666666666,
+        "type": "Assassination",
+        "kind": "boss",
+        "level": "20–25",
+        "faction": "Grineer",
+        "tileset": "Grineer Forest",
+        "to": null,
+        "links": [
+          "Tikal",
+          "Erpo"
+        ]
+      },
+      {
+        "name": "Gaia",
+        "x": -0.12083333333333333,
+        "y": 0.69375,
+        "type": "Interception",
+        "kind": "mission",
+        "level": "1–6",
+        "faction": "Grineer",
+        "tileset": "Grineer Forest",
+        "to": null,
+        "links": [
+          "Cambria",
+          "Pacific",
+          "Mantle"
+        ]
+      },
+      {
+        "name": "Cambria",
+        "x": -0.4583333333333333,
+        "y": 0.8520833333333333,
+        "type": "Spy",
+        "kind": "mission",
+        "level": "2–4",
+        "faction": "Grineer",
+        "tileset": "Grineer Forest",
+        "to": null,
+        "links": [
+          "Venus Junction",
+          "Gaia"
+        ]
+      }
+    ],
+    "edges": [
+      [
+        0,
+        11
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        8,
+        11
+      ],
+      [
+        8,
+        13
+      ],
+      [
+        10,
+        12
+      ],
+      [
+        11,
+        14
+      ],
+      [
+        13,
+        14
+      ]
+    ],
+    "title": false
+  },
+  "Jupiter": {
+    "source": "main referacne 2 (4).jpg",
+    "cx": 763,
+    "cy": 509,
+    "radius": 364,
+    "nodes": [
+      {
+        "name": "To Ceres",
+        "x": 0.7664835164835165,
+        "y": -0.9821428571428571,
+        "type": "",
+        "kind": "travel",
+        "level": "",
+        "faction": "",
+        "tileset": "",
+        "to": "Ceres",
+        "links": []
+      },
+      {
+        "name": "Carme",
+        "x": -0.4065934065934066,
+        "y": -0.8104395604395604,
+        "type": "Mobile Defense",
+        "kind": "mission",
+        "level": "16–18",
+        "faction": "Corpus",
+        "tileset": "Corpus Gas City",
+        "to": null,
+        "links": [
+          "Carpo",
+          "Metis"
+        ]
+      },
+      {
+        "name": "Metis",
+        "x": 0.521978021978022,
+        "y": -0.7458791208791209,
+        "type": "Rescue",
+        "kind": "mission",
+        "level": "15–17",
+        "faction": "Corpus",
+        "tileset": "Corpus Gas City",
+        "to": null,
+        "links": [
+          "Ananke",
+          "Carme",
+          "Elara"
+        ]
+      },
+      {
+        "name": "Ananke",
+        "x": -0.17307692307692307,
+        "y": -0.5068681318681318,
+        "type": "Capture",
+        "kind": "mission",
+        "level": "16–18",
+        "faction": "Corpus",
+        "tileset": "Corpus Gas City",
+        "to": null,
+        "links": [
+          "Amalthea",
+          "Callisto",
+          "Metis"
+        ]
+      },
+      {
+        "name": "Carpo",
+        "x": -0.8956043956043956,
+        "y": -0.18543956043956045,
+        "type": "Exterminate",
+        "kind": "mission",
+        "level": "17–19",
+        "faction": "Corpus",
+        "tileset": "Corpus Gas City",
+        "to": null,
+        "links": [
+          "Europa Junction",
+          "Thebe",
+          "Carme"
+        ]
+      },
+      {
+        "name": "Cameria",
+        "x": 0.44505494505494503,
+        "y": -0.21153846153846154,
+        "type": "Survival",
+        "kind": "dark",
+        "level": "20–30",
+        "faction": "Infested",
+        "tileset": "Corpus Gas City",
+        "to": null,
+        "links": [
+          "Callisto"
+        ]
+      },
+      {
+        "name": "Callisto",
+        "x": 0.03021978021978022,
+        "y": -0.12362637362637363,
+        "type": "Interception",
+        "kind": "mission",
+        "level": "15–20",
+        "faction": "Corpus",
+        "tileset": "Corpus Gas City",
+        "to": null,
+        "links": [
+          "Cameria",
+          "Ananke"
+        ]
+      },
+      {
+        "name": "Elara",
+        "x": 0.8296703296703297,
+        "y": -0.1304945054945055,
+        "type": "Survival",
+        "kind": "mission",
+        "level": "15–20",
+        "faction": "Corpus",
+        "tileset": "Corpus Gas City",
+        "to": null,
+        "links": [
+          "Adrastea",
+          "Metis"
+        ]
+      },
+      {
+        "name": "Europa Junction",
+        "x": -1.1785714285714286,
+        "y": -0.009615384615384616,
+        "type": "Solar Rail Junction",
+        "kind": "mission",
+        "level": "1–3",
+        "faction": "Tenno",
+        "tileset": "Solar Rail",
+        "to": null,
+        "links": [
+          "Morax",
+          "Carpo"
+        ]
+      },
+      {
+        "name": "To Europa",
+        "x": -1.348901098901099,
+        "y": 0.038461538461538464,
+        "type": "",
+        "kind": "travel",
+        "level": "",
+        "faction": "",
+        "tileset": "",
+        "to": "Europa",
+        "links": []
+      },
+      {
+        "name": "Amalthea",
+        "x": -0.3241758241758242,
+        "y": 0.09340659340659341,
+        "type": "Spy",
+        "kind": "mission",
+        "level": "17–19",
+        "faction": "Corpus",
+        "tileset": "Corpus Gas City",
+        "to": null,
+        "links": [
+          "Sinai",
+          "Thebe",
+          "Ananke"
+        ]
+      },
+      {
+        "name": "Adrastea",
+        "x": 1.1126373626373627,
+        "y": 0.2774725274725275,
+        "type": "Sabotage",
+        "kind": "mission",
+        "level": "18–20",
+        "faction": "Corpus",
+        "tileset": "Corpus Ship",
+        "to": null,
+        "links": [
+          "Io",
+          "Elara"
+        ]
+      },
+      {
+        "name": "Sinai",
+        "x": -0.1043956043956044,
+        "y": 0.3475274725274725,
+        "type": "Defense",
+        "kind": "dark",
+        "level": "20–30",
+        "faction": "Infested",
+        "tileset": "Corpus Gas City",
+        "to": null,
+        "links": [
+          "Amalthea"
+        ]
+      },
+      {
+        "name": "Thebe",
+        "x": -0.7197802197802198,
+        "y": 0.5357142857142857,
+        "type": "Sabotage",
+        "kind": "mission",
+        "level": "18–20",
+        "faction": "Corpus",
+        "tileset": "Corpus Gas City",
+        "to": null,
+        "links": [
+          "Galilea",
+          "Themisto",
+          "Amalthea",
+          "Carpo"
+        ]
+      },
+      {
+        "name": "Themisto",
+        "x": -0.1565934065934066,
+        "y": 0.8255494505494505,
+        "type": "Assassination",
+        "kind": "boss",
+        "level": "18–20",
+        "faction": "Corpus",
+        "tileset": "Corpus Gas City",
+        "to": null,
+        "links": [
+          "Saturn Junction",
+          "Io",
+          "Thebe"
+        ]
+      },
+      {
+        "name": "Galilea",
+        "x": -1.0054945054945055,
+        "y": 0.9258241758241759,
+        "type": "Sabotage",
+        "kind": "mission",
+        "level": "15–20",
+        "faction": "Corpus",
+        "tileset": "Corpus Ship (Archwing)",
+        "to": null,
+        "links": [
+          "Thebe"
+        ]
+      },
+      {
+        "name": "Saturn Junction",
+        "x": 0.008241758241758242,
+        "y": 1.0947802197802199,
+        "type": "Solar Rail Junction",
+        "kind": "mission",
+        "level": "1–3",
+        "faction": "Tenno",
+        "tileset": "Solar Rail",
+        "to": null,
+        "links": [
+          "Cassini",
+          "Dione",
+          "Kronia Relay",
+          "Themisto"
+        ]
+      },
+      {
+        "name": "To Saturn",
+        "x": 0.1043956043956044,
+        "y": 1.2321428571428572,
+        "type": "",
+        "kind": "travel",
+        "level": "",
+        "faction": "",
+        "tileset": "",
+        "to": "Saturn",
+        "links": []
+      }
+    ],
+    "edges": [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        10
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        13
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        11
+      ],
+      [
+        10,
+        12
+      ],
+      [
+        10,
+        13
+      ],
+      [
+        13,
+        14
+      ],
+      [
+        13,
+        15
+      ],
+      [
+        14,
+        16
+      ]
+    ],
+    "title": true
+  },
+  "Europa": {
+    "source": "aided frames (3).jpeg",
+    "cx": 332,
+    "cy": 405,
+    "radius": 300,
+    "nodes": [
+      {
+        "name": "Armaros",
+        "x": -0.6466666666666666,
+        "y": -1.0583333333333333,
+        "type": "Exterminate",
+        "kind": "mission",
+        "level": "18–20",
+        "faction": "",
+        "tileset": "Infested Ship",
+        "to": null,
+        "links": [
+          "Naamah"
+        ]
+      },
+      {
+        "name": "Naamah",
+        "x": 0.02666666666666667,
+        "y": -0.8766666666666667,
+        "type": "Assassination",
+        "kind": "boss",
+        "level": "21–23",
+        "faction": "Corpus",
+        "tileset": "Corpus Ice Planet",
+        "to": null,
+        "links": [
+          "Armaros",
+          "Kokabiel"
+        ]
+      },
+      {
+        "name": "Kokabiel",
+        "x": 0.5733333333333334,
+        "y": -0.595,
+        "type": "Sabotage",
+        "kind": "mission",
+        "level": "20–22",
+        "faction": "Corpus",
+        "tileset": "Corpus Ice Planet",
+        "to": null,
+        "links": [
+          "Abaddon",
+          "Naamah",
+          "Valefor"
+        ]
+      },
+      {
+        "name": "Cholistan",
+        "x": -0.6766666666666666,
+        "y": -0.54,
+        "type": "Excavation",
+        "kind": "dark",
+        "level": "23–33",
+        "faction": "Infested",
+        "tileset": "Corpus Ice Planet",
+        "to": null,
+        "links": [
+          "Baal"
+        ]
+      },
+      {
+        "name": "Abaddon",
+        "x": 0.07,
+        "y": -0.5283333333333333,
+        "type": "Capture",
+        "kind": "mission",
+        "level": "21–23",
+        "faction": "Corpus",
+        "tileset": "Corpus Ice Planet",
+        "to": null,
+        "links": [
+          "Larzac",
+          "Kokabiel"
+        ]
+      },
+      {
+        "name": "Larzac",
+        "x": -0.2633333333333333,
+        "y": -0.295,
+        "type": "Defense",
+        "kind": "dark",
+        "level": "23–33",
+        "faction": "Infested",
+        "tileset": "Corpus Ice Planet",
+        "to": null,
+        "links": [
+          "Abaddon"
+        ]
+      },
+      {
+        "name": "Orias",
+        "x": 0.9633333333333334,
+        "y": 0.03333333333333333,
+        "type": "Rescue",
+        "kind": "mission",
+        "level": "20–22",
+        "faction": "Corpus",
+        "tileset": "Corpus Ice Planet",
+        "to": null,
+        "links": [
+          "Valac",
+          "Morax"
+        ]
+      },
+      {
+        "name": "Baal",
+        "x": -0.89,
+        "y": 0.08333333333333333,
+        "type": "Exterminate",
+        "kind": "mission",
+        "level": "21–23",
+        "faction": "Corpus",
+        "tileset": "Corpus Ice Planet",
+        "to": null,
+        "links": [
+          "Cholistan",
+          "Tiwaz",
+          "Sorath"
+        ]
+      },
+      {
+        "name": "Valefor",
+        "x": 0.48333333333333334,
+        "y": 0.12333333333333334,
+        "type": "Excavation",
+        "kind": "mission",
+        "level": "18–23",
+        "faction": "Corpus",
+        "tileset": "Corpus Ice Planet",
+        "to": null,
+        "links": [
+          "Kokabiel",
+          "Morax"
+        ]
+      },
+      {
+        "name": "Paimon",
+        "x": -0.4766666666666667,
+        "y": 0.32,
+        "type": "Defense",
+        "kind": "mission",
+        "level": "18–23",
+        "faction": "Corpus",
+        "tileset": "Corpus Ice Planet",
+        "to": null,
+        "links": [
+          "Sorath"
+        ]
+      },
+      {
+        "name": "Morax",
+        "x": 0.57,
+        "y": 0.605,
+        "type": "Mobile Defense",
+        "kind": "mission",
+        "level": "18–20",
+        "faction": "Corpus",
+        "tileset": "Corpus Ice Planet",
+        "to": null,
+        "links": [
+          "Orias",
+          "Ose",
+          "Valefor",
+          "Europa Junction"
+        ]
+      },
+      {
+        "name": "Sorath",
+        "x": -0.44333333333333336,
+        "y": 0.7583333333333333,
+        "type": "Hijack",
+        "kind": "mission",
+        "level": "19–21",
+        "faction": "Corpus",
+        "tileset": "Corpus Ice Planet",
+        "to": null,
+        "links": [
+          "Baal",
+          "Paimon",
+          "Ose"
+        ]
+      },
+      {
+        "name": "Ose",
+        "x": 0.03666666666666667,
+        "y": 0.9133333333333333,
+        "type": "Interception",
+        "kind": "mission",
+        "level": "18–23",
+        "faction": "Corpus",
+        "tileset": "Corpus Ice Planet",
+        "to": null,
+        "links": [
+          "Sorath",
+          "Morax"
+        ]
+      }
+    ],
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6,
+        10
+      ],
+      [
+        7,
+        11
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        9,
+        11
+      ],
+      [
+        10,
+        12
+      ],
+      [
+        11,
+        12
+      ]
+    ],
+    "title": true
+  },
+  "Mars": {
+    "source": ".analysis\\web-assets\\StarChartMarsU32.jpg",
+    "cx": 967.5,
+    "cy": 523.5,
+    "radius": 329.20001220703125,
+    "nodes": [
+      {
+        "name": "Wahiba",
+        "x": 0.43894287558265677,
+        "y": -1.0768529369830575,
+        "type": "Survival",
+        "kind": "dark",
+        "level": "10–20",
+        "faction": "Infested",
+        "tileset": "Corpus Ship",
+        "to": null,
+        "links": [
+          "Ultor"
+        ]
+      },
+      {
+        "name": "To Phobos",
+        "x": 1.5476913156357344,
+        "y": -1.0085054304044432,
+        "type": "",
+        "kind": "travel",
+        "level": "",
+        "faction": "",
+        "tileset": "",
+        "to": "Phobos",
+        "links": []
+      },
+      {
+        "name": "Syrtis",
+        "x": -0.7578979062828571,
+        "y": -0.9629404260187002,
+        "type": "Exterminate",
+        "kind": "mission",
+        "level": "8–13",
+        "faction": "Grineer",
+        "tileset": "Free Space",
+        "to": null,
+        "links": [
+          "Ara"
+        ]
+      },
+      {
+        "name": "Ultor",
+        "x": -0.013669501315722874,
+        "y": -0.978128760813948,
+        "type": "Exterminate",
+        "kind": "mission",
+        "level": "11–13",
+        "faction": "",
+        "tileset": "Corpus Ice Planet",
+        "to": null,
+        "links": [
+          "Wahiba",
+          "Alator"
+        ]
+      },
+      {
+        "name": "Alator",
+        "x": -0.4936208808455482,
+        "y": -0.8186512454638477,
+        "type": "Interception",
+        "kind": "mission",
+        "level": "8–13",
+        "faction": "Grineer",
+        "tileset": "Grineer Settlement",
+        "to": null,
+        "links": [
+          "Ultor",
+          "Ara"
+        ]
+      },
+      {
+        "name": "Phobos Junction",
+        "x": 1.338092295461317,
+        "y": -0.7806804084757286,
+        "type": "Solar Rail Junction",
+        "kind": "mission",
+        "level": "1–3",
+        "faction": "Tenno",
+        "tileset": "Solar Rail",
+        "to": null,
+        "links": [
+          "Roche",
+          "Gradivus"
+        ]
+      },
+      {
+        "name": "Gradivus",
+        "x": 1.016099597802067,
+        "y": -0.6212028931256284,
+        "type": "Sabotage",
+        "kind": "mission",
+        "level": "9–11",
+        "faction": "Corpus",
+        "tileset": "Corpus Ship",
+        "to": null,
+        "links": [
+          "Phobos Junction",
+          "Hellas",
+          "Tharsis"
+        ]
+      },
+      {
+        "name": "Ceres Junction",
+        "x": -1.1588699448773947,
+        "y": -0.5756378887398855,
+        "type": "Solar Rail Junction",
+        "kind": "mission",
+        "level": "1–1",
+        "faction": "Tenno",
+        "tileset": "Solar Rail",
+        "to": null,
+        "links": [
+          "Pallas",
+          "Martialis"
+        ]
+      },
+      {
+        "name": "Augustus",
+        "x": 0.13517617967770398,
+        "y": -0.4921020473660235,
+        "type": "Excavation",
+        "kind": "mission",
+        "level": "9–14",
+        "faction": "Grineer",
+        "tileset": "Grineer Settlement",
+        "to": null,
+        "links": [
+          "Arval",
+          "War",
+          "Ares"
+        ]
+      },
+      {
+        "name": "Ara",
+        "x": -0.43894287558265677,
+        "y": -0.39945320511501287,
+        "type": "Capture",
+        "kind": "mission",
+        "level": "10–12",
+        "faction": "Grineer",
+        "tileset": "Grineer Settlement",
+        "to": null,
+        "links": [
+          "Alator",
+          "Syrtis",
+          "Martialis",
+          "Spear"
+        ]
+      },
+      {
+        "name": "Olympus",
+        "x": 0.7427095714876095,
+        "y": -0.11695017792340681,
+        "type": "Disruption",
+        "kind": "mission",
+        "level": "15–20",
+        "faction": "Grineer",
+        "tileset": "Grineer Settlement",
+        "to": null,
+        "links": [
+          "Augustus"
+        ]
+      },
+      {
+        "name": "Martialis",
+        "x": -0.5999392244122818,
+        "y": 0.010631834356673347,
+        "type": "Rescue",
+        "kind": "mission",
+        "level": "10–12",
+        "faction": "Grineer",
+        "tileset": "Grineer Settlement",
+        "to": null,
+        "links": [
+          "Ceres Junction",
+          "Vallis",
+          "Ara",
+          "War"
+        ]
+      },
+      {
+        "name": "Ares",
+        "x": -0.2141555206129917,
+        "y": 0.04404617090621815,
+        "type": "Sabotage",
+        "kind": "mission",
+        "level": "9–11",
+        "faction": "Grineer",
+        "tileset": "Grineer Settlement",
+        "to": null,
+        "links": [
+          "Tharsis",
+          "Augustus",
+          "Mars Junction"
+        ]
+      },
+      {
+        "name": "Arval",
+        "x": 0.25364519108063555,
+        "y": 0.11087484400530775,
+        "type": "Spy",
+        "kind": "mission",
+        "level": "9–11",
+        "faction": "Grineer",
+        "tileset": "Grineer Settlement",
+        "to": null,
+        "links": [
+          "Spear",
+          "Hellas",
+          "Augustus"
+        ]
+      },
+      {
+        "name": "Maroo's Bazaar",
+        "x": 1.2165856170993359,
+        "y": 0.10024300964863442,
+        "type": "Relay",
+        "kind": "mission",
+        "level": "0–0",
+        "faction": "Tenno",
+        "tileset": "Relay",
+        "to": null,
+        "links": [
+          "Tharsis"
+        ]
+      },
+      {
+        "name": "Vallis",
+        "x": -1.2621506214850788,
+        "y": 0.2020048527767936,
+        "type": "Mobile Defense",
+        "kind": "mission",
+        "level": "11–13",
+        "faction": "Grineer",
+        "tileset": "Grineer Galleon",
+        "to": null,
+        "links": [
+          "Martialis"
+        ]
+      },
+      {
+        "name": "Tharsis",
+        "x": 0.8186512454638477,
+        "y": 0.3174361972206756,
+        "type": "Mobile Defense",
+        "kind": "mission",
+        "level": "8–10",
+        "faction": "Grineer",
+        "tileset": "Grineer Settlement",
+        "to": null,
+        "links": [
+          "Gradivus",
+          "Maroo's Bazaar",
+          "Ares"
+        ]
+      },
+      {
+        "name": "War",
+        "x": -0.7821992419552534,
+        "y": 0.35844470116784427,
+        "type": "Assassination",
+        "kind": "boss",
+        "level": "11–13",
+        "faction": "Grineer",
+        "tileset": "Grineer Settlement",
+        "to": null,
+        "links": [
+          "Martialis",
+          "Horend",
+          "Augustus"
+        ]
+      },
+      {
+        "name": "Spear",
+        "x": 0.13517617967770398,
+        "y": 0.46476304473457775,
+        "type": "Defense",
+        "kind": "mission",
+        "level": "8–13",
+        "faction": "Grineer",
+        "tileset": "Grineer Settlement",
+        "to": null,
+        "links": [
+          "Ara",
+          "Tyana Pass",
+          "Arval"
+        ]
+      },
+      {
+        "name": "Kadesh",
+        "x": -0.43894287558265677,
+        "y": 0.6773997318680447,
+        "type": "Defense",
+        "kind": "dark",
+        "level": "10–20",
+        "faction": "Infested",
+        "tileset": "Grineer Settlement",
+        "to": null,
+        "links": [
+          "Ultor"
+        ]
+      },
+      {
+        "name": "Hellas",
+        "x": 0.15340218143200116,
+        "y": 0.8459902480952934,
+        "type": "Exterminate",
+        "kind": "mission",
+        "level": "8–10",
+        "faction": "Grineer",
+        "tileset": "Grineer Settlement",
+        "to": null,
+        "links": [
+          "Gradivus",
+          "Olympus",
+          "Arval"
+        ]
+      },
+      {
+        "name": "To Deimos",
+        "x": -0.7791615749962039,
+        "y": 1.0434386004335128,
+        "type": "",
+        "kind": "travel",
+        "level": "",
+        "faction": "",
+        "tileset": "",
+        "to": "Deimos",
+        "links": []
+      }
+    ],
+    "edges": [
+      [
+        0,
+        3
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        19
+      ],
+      [
+        4,
+        9
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        16
+      ],
+      [
+        6,
+        20
+      ],
+      [
+        7,
+        11
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        8,
+        12
+      ],
+      [
+        8,
+        13
+      ],
+      [
+        8,
+        17
+      ],
+      [
+        9,
+        11
+      ],
+      [
+        9,
+        18
+      ],
+      [
+        10,
+        20
+      ],
+      [
+        11,
+        15
+      ],
+      [
+        11,
+        17
+      ],
+      [
+        12,
+        16
+      ],
+      [
+        13,
+        18
+      ],
+      [
+        13,
+        20
+      ],
+      [
+        14,
+        16
+      ]
+    ],
+    "title": true
+  },
+  "Phobos": {
+    "source": ".analysis\\web-assets\\StarChartPhobosU32.jpg",
+    "cx": 1093,
+    "cy": 561,
+    "radius": 249,
+    "nodes": [
+      {
+        "name": "Iliad",
+        "x": 0.4457831325301205,
+        "y": -1.4839357429718876,
+        "type": "Assassination",
+        "kind": "boss",
+        "level": "13–15",
+        "faction": "Corpus",
+        "tileset": "Corpus Ship",
+        "to": null,
+        "links": [
+          "Monolith",
+          "Kepler"
+        ]
+      },
+      {
+        "name": "To Void",
+        "x": -1.7630522088353413,
+        "y": -1.3895582329317269,
+        "type": "",
+        "kind": "travel",
+        "level": "",
+        "faction": "",
+        "tileset": "",
+        "to": "Void",
+        "links": []
+      },
+      {
+        "name": "Monolith",
+        "x": -0.46586345381526106,
+        "y": -1.41566265060241,
+        "type": "Rescue",
+        "kind": "mission",
+        "level": "13–15",
+        "faction": "Corpus",
+        "tileset": "Corpus Ship",
+        "to": null,
+        "links": [
+          "Iliad",
+          "Skyresh"
+        ]
+      },
+      {
+        "name": "Stickney",
+        "x": -1.2329317269076305,
+        "y": -1.1224899598393574,
+        "type": "Survival",
+        "kind": "mission",
+        "level": "10–15",
+        "faction": "Corpus",
+        "tileset": "Corpus Ship",
+        "to": null,
+        "links": [
+          "Teshub",
+          "Skyresh"
+        ]
+      },
+      {
+        "name": "Skyresh",
+        "x": -0.7550200803212851,
+        "y": -0.7168674698795181,
+        "type": "Capture",
+        "kind": "mission",
+        "level": "12–14",
+        "faction": "Corpus",
+        "tileset": "Corpus Ship",
+        "to": null,
+        "links": [
+          "Monolith",
+          "Stickney",
+          "Shklovsky"
+        ]
+      },
+      {
+        "name": "Memphis",
+        "x": 0.43373493975903615,
+        "y": -0.6767068273092369,
+        "type": "Defection",
+        "kind": "dark",
+        "level": "15–25",
+        "faction": "Infested",
+        "tileset": "Grineer Asteroid",
+        "to": null,
+        "links": [
+          "Kepler"
+        ]
+      },
+      {
+        "name": "Kepler",
+        "x": 1.3734939759036144,
+        "y": -0.4899598393574297,
+        "type": "Rush",
+        "kind": "mission",
+        "level": "12–14",
+        "faction": "Corpus",
+        "tileset": "Corpus Ship (Archwing)",
+        "to": null,
+        "links": [
+          "Iliad",
+          "Memphis",
+          "Zeugma",
+          "Sharpless"
+        ]
+      },
+      {
+        "name": "Zeugma",
+        "x": 0.6827309236947792,
+        "y": -0.3293172690763052,
+        "type": "Survival",
+        "kind": "dark",
+        "level": "15–25",
+        "faction": "Infested",
+        "tileset": "Grineer Asteroid",
+        "to": null,
+        "links": [
+          "Kepler"
+        ]
+      },
+      {
+        "name": "Shklovsky",
+        "x": -0.6385542168674698,
+        "y": 0.285140562248996,
+        "type": "Spy",
+        "kind": "mission",
+        "level": "11–13",
+        "faction": "Corpus",
+        "tileset": "Corpus Ship",
+        "to": null,
+        "links": [
+          "Skyresh",
+          "Roche"
+        ]
+      },
+      {
+        "name": "Gulliver",
+        "x": 1.2530120481927711,
+        "y": 0.38353413654618473,
+        "type": "Defense",
+        "kind": "mission",
+        "level": "10–15",
+        "faction": "Corpus",
+        "tileset": "Corpus Ship",
+        "to": null,
+        "links": [
+          "Sharpless"
+        ]
+      },
+      {
+        "name": "Roche",
+        "x": -0.2248995983935743,
+        "y": 0.9176706827309237,
+        "type": "Exterminate",
+        "kind": "mission",
+        "level": "10–12",
+        "faction": "Corpus",
+        "tileset": "Corpus Ship",
+        "to": null,
+        "links": [
+          "Sharpless",
+          "Shklovsky",
+          "Phobos Junction"
+        ]
+      },
+      {
+        "name": "Sharpless",
+        "x": 0.5903614457831325,
+        "y": 1.038152610441767,
+        "type": "Mobile Defense",
+        "kind": "mission",
+        "level": "11–13",
+        "faction": "Corpus",
+        "tileset": "Corpus Ship",
+        "to": null,
+        "links": [
+          "Gulliver",
+          "Kepler",
+          "Roche"
+        ]
+      },
+      {
+        "name": "To Mars",
+        "x": -0.7991967871485943,
+        "y": 1.7931726907630523,
+        "type": "",
+        "kind": "travel",
+        "level": "",
+        "faction": "",
+        "tileset": "",
+        "to": "Mars",
+        "links": []
+      }
+    ],
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        6,
+        11
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        9,
+        11
+      ],
+      [
+        10,
+        11
+      ]
+    ],
+    "title": true
+  },
+  "Ceres": {
+    "source": ".analysis\\web-assets\\StarChartCeresU32.jpg",
+    "cx": 691.5,
+    "cy": 592.5,
+    "radius": 259.6000061035156,
+    "nodes": [
+      {
+        "name": "Thon",
+        "x": 0.5566255647250661,
+        "y": -1.2191833303493662,
+        "type": "Sabotage",
+        "kind": "mission",
+        "level": "15–17",
+        "faction": "Grineer",
+        "tileset": "Grineer Galleon",
+        "to": null,
+        "links": [
+          "Kiste"
+        ]
+      },
+      {
+        "name": "Draco",
+        "x": -1.2885207709379558,
+        "y": -0.9899845684037508,
+        "type": "Survival",
+        "kind": "mission",
+        "level": "12–17",
+        "faction": "Grineer",
+        "tileset": "Grineer Asteroid",
+        "to": null,
+        "links": [
+          "Ker"
+        ]
+      },
+      {
+        "name": "Kiste",
+        "x": -0.0789676406703381,
+        "y": -1.0130970485999473,
+        "type": "Mobile Defense",
+        "kind": "mission",
+        "level": "13–15",
+        "faction": "Grineer",
+        "tileset": "Grineer Shipyard",
+        "to": null,
+        "links": [
+          "Ker",
+          "Thon",
+          "Cinxia"
+        ]
+      },
+      {
+        "name": "Cinxia",
+        "x": 0.6760400457387481,
+        "y": -0.7550076864090862,
+        "type": "Interception",
+        "kind": "mission",
+        "level": "12–17",
+        "faction": "Grineer",
+        "tileset": "Grineer Shipyard",
+        "to": null,
+        "links": [
+          "Kiste",
+          "Nuovo",
+          "Pallas"
+        ]
+      },
+      {
+        "name": "Ker",
+        "x": -0.7530816463927366,
+        "y": -0.6413713254444534,
+        "type": "Sabotage",
+        "kind": "mission",
+        "level": "14–16",
+        "faction": "Grineer",
+        "tileset": "Grineer Shipyard",
+        "to": null,
+        "links": [
+          "Draco",
+          "Ludi",
+          "Kiste"
+        ]
+      },
+      {
+        "name": "To Mars",
+        "x": 1.2962249310033547,
+        "y": -0.5412172445942685,
+        "type": "",
+        "kind": "travel",
+        "level": "",
+        "faction": "",
+        "tileset": "",
+        "to": "Mars",
+        "links": []
+      },
+      {
+        "name": "Nuovo",
+        "x": 0.0789676406703381,
+        "y": -0.3332049228284998,
+        "type": "Rescue",
+        "kind": "mission",
+        "level": "13–15",
+        "faction": "Grineer",
+        "tileset": "Grineer Shipyard",
+        "to": null,
+        "links": [
+          "Exta",
+          "Bode",
+          "Cinxia"
+        ]
+      },
+      {
+        "name": "Pallas",
+        "x": 0.9418335679950081,
+        "y": -0.2137904418148178,
+        "type": "Exterminate",
+        "kind": "mission",
+        "level": "12–14",
+        "faction": "Grineer",
+        "tileset": "Grineer Shipyard",
+        "to": null,
+        "links": [
+          "Bode",
+          "Cinxia",
+          "Ceres Junction"
+        ]
+      },
+      {
+        "name": "Exta",
+        "x": -0.4872881241364766,
+        "y": -0.1367488411608294,
+        "type": "Assassination",
+        "kind": "boss",
+        "level": "14–16",
+        "faction": "Grineer",
+        "tileset": "Grineer Shipyard",
+        "to": null,
+        "links": [
+          "Ludi",
+          "Nuovo"
+        ]
+      },
+      {
+        "name": "Bode",
+        "x": 0.8301232470467249,
+        "y": 0.22342064189656632,
+        "type": "Spy",
+        "kind": "mission",
+        "level": "12–14",
+        "faction": "Grineer",
+        "tileset": "Grineer Shipyard",
+        "to": null,
+        "links": [
+          "Casta",
+          "Nuovo",
+          "Pallas"
+        ]
+      },
+      {
+        "name": "Ludi",
+        "x": -0.8339753270794243,
+        "y": 0.2927580824851559,
+        "type": "Hijack",
+        "kind": "mission",
+        "level": "15–17",
+        "faction": "Grineer",
+        "tileset": "Grineer Shipyard",
+        "to": null,
+        "links": [
+          "Exta",
+          "Ker",
+          "Lex"
+        ]
+      },
+      {
+        "name": "Seimeni",
+        "x": 0.0789676406703381,
+        "y": 0.40446840343343904,
+        "type": "Defense",
+        "kind": "dark",
+        "level": "15–25",
+        "faction": "Infested",
+        "tileset": "Grineer Shipyard",
+        "to": null,
+        "links": [
+          "Casta"
+        ]
+      },
+      {
+        "name": "Jupiter Junction",
+        "x": -1.1113250894337825,
+        "y": 0.5258089244634708,
+        "type": "Junction",
+        "kind": "junction",
+        "level": "",
+        "faction": "",
+        "tileset": "",
+        "to": "Jupiter",
+        "links": []
+      },
+      {
+        "name": "Casta",
+        "x": 0.5104006043326731,
+        "y": 0.6452234054771527,
+        "type": "Defense",
+        "kind": "mission",
+        "level": "12–17",
+        "faction": "Grineer",
+        "tileset": "Grineer Shipyard",
+        "to": null,
+        "links": [
+          "Lex",
+          "Seimeni",
+          "Bode"
+        ]
+      },
+      {
+        "name": "To Jupiter",
+        "x": -1.4849768526056262,
+        "y": 0.7684899665235342,
+        "type": "",
+        "kind": "travel",
+        "level": "",
+        "faction": "",
+        "tileset": "",
+        "to": "Jupiter",
+        "links": []
+      },
+      {
+        "name": "Lex",
+        "x": -0.14445300122622823,
+        "y": 0.7646378864908348,
+        "type": "Capture",
+        "kind": "mission",
+        "level": "14–16",
+        "faction": "Grineer",
+        "tileset": "Grineer Shipyard",
+        "to": null,
+        "links": [
+          "Gabii",
+          "Ludi",
+          "Casta"
+        ]
+      },
+      {
+        "name": "Gabii",
+        "x": -0.4140986035151876,
+        "y": 1.1132511294501322,
+        "type": "Survival",
+        "kind": "dark",
+        "level": "15–25",
+        "faction": "Infested",
+        "tileset": "Grineer Galleon",
+        "to": null,
+        "links": [
+          "Lex"
+        ]
+      }
+    ],
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        6,
+        9
+      ],
+      [
+        7,
+        9
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        9,
+        13
+      ],
+      [
+        10,
+        15
+      ],
+      [
+        11,
+        13
+      ],
+      [
+        13,
+        15
+      ],
+      [
+        15,
+        16
+      ]
+    ],
+    "title": true
+  },
+  "Saturn": {
+    "source": ".analysis\\web-assets\\StarChartSaturnU32.jpg",
+    "cx": 784.5,
+    "cy": 589.5,
+    "radius": 279.3999938964844,
+    "nodes": [
+      {
+        "name": "Kronia Relay",
+        "x": 0.23443092852846398,
+        "y": -1.3171081175339656,
+        "type": "Relay",
+        "kind": "mission",
+        "level": "0–0",
+        "faction": "Tenno",
+        "tileset": "Relay",
+        "to": null,
+        "links": []
+      },
+      {
+        "name": "To Jupiter",
+        "x": -1.104151777878338,
+        "y": -1.1274159158239108,
+        "type": "",
+        "kind": "travel",
+        "level": "",
+        "faction": "",
+        "tileset": "",
+        "to": "Jupiter",
+        "links": []
+      },
+      {
+        "name": "Cassini",
+        "x": 0.6138153319485736,
+        "y": -0.9788833427867923,
+        "type": "Capture",
+        "kind": "mission",
+        "level": "21–23",
+        "faction": "Grineer",
+        "tileset": "Grineer Galleon",
+        "to": null,
+        "links": [
+          "Numa",
+          "Saturn Junction"
+        ]
+      },
+      {
+        "name": "Dione",
+        "x": -0.9180386743137559,
+        "y": -0.8070866318041012,
+        "type": "Spy",
+        "kind": "mission",
+        "level": "21–23",
+        "faction": "Grineer",
+        "tileset": "Grineer Asteroid",
+        "to": null,
+        "links": [
+          "Anthe",
+          "Telesto",
+          "Saturn Junction"
+        ]
+      },
+      {
+        "name": "Pandora",
+        "x": 1.5551181442079023,
+        "y": -0.5386542708936463,
+        "type": "Pursuit",
+        "kind": "mission",
+        "level": "21–23",
+        "faction": "Grineer",
+        "tileset": "Free Space",
+        "to": null,
+        "links": [
+          "Caracol",
+          "Numa"
+        ]
+      },
+      {
+        "name": "Numa",
+        "x": 1.0433071094053015,
+        "y": -0.3937007960020006,
+        "type": "Rescue",
+        "kind": "mission",
+        "level": "22–24",
+        "faction": "Grineer",
+        "tileset": "Grineer Asteroid",
+        "to": null,
+        "links": [
+          "Enceladus",
+          "Pandora",
+          "Cassini"
+        ]
+      },
+      {
+        "name": "Anthe",
+        "x": -1.8342877995547755,
+        "y": -0.27380100812866404,
+        "type": "Rescue",
+        "kind": "mission",
+        "level": "22–24",
+        "faction": "Grineer",
+        "tileset": "Grineer Galleon",
+        "to": null,
+        "links": [
+          "Rhea",
+          "Dione"
+        ]
+      },
+      {
+        "name": "Telesto",
+        "x": -1.2186829185334653,
+        "y": -0.2916964988560277,
+        "type": "Exterminate",
+        "kind": "mission",
+        "level": "22–24",
+        "faction": "Grineer",
+        "tileset": "Grineer Galleon",
+        "to": null,
+        "links": [
+          "Tethys",
+          "Dione"
+        ]
+      },
+      {
+        "name": "Caracol",
+        "x": 1.9094488606097029,
+        "y": -0.17895490727363664,
+        "type": "Defection",
+        "kind": "dark",
+        "level": "26–36",
+        "faction": "Infested",
+        "tileset": "Grineer Galleon",
+        "to": null,
+        "links": [
+          "Pandora"
+        ]
+      },
+      {
+        "name": "Rhea",
+        "x": -2.213672202974885,
+        "y": 0.03937007960020006,
+        "type": "Interception",
+        "kind": "mission",
+        "level": "21–26",
+        "faction": "Grineer",
+        "tileset": "Grineer Asteroid",
+        "to": null,
+        "links": [
+          "Piscinas",
+          "Anthe"
+        ]
+      },
+      {
+        "name": "Enceladus",
+        "x": 1.5157480646077022,
+        "y": 0.008947745363681831,
+        "type": "Sabotage",
+        "kind": "mission",
+        "level": "23–25",
+        "faction": "Grineer",
+        "tileset": "Grineer Asteroid",
+        "to": null,
+        "links": [
+          "Helene",
+          "Titan",
+          "Numa"
+        ]
+      },
+      {
+        "name": "Keeler",
+        "x": -1.8235505051183571,
+        "y": 0.1914817507827912,
+        "type": "Mobile Defense",
+        "kind": "mission",
+        "level": "23–25",
+        "faction": "Grineer",
+        "tileset": "Grineer Asteroid",
+        "to": null,
+        "links": [
+          "Calypso",
+          "Telesto"
+        ]
+      },
+      {
+        "name": "Titan",
+        "x": 2.145669338210903,
+        "y": 0.1700071619099548,
+        "type": "Survival",
+        "kind": "mission",
+        "level": "21–26",
+        "faction": "Grineer",
+        "tileset": "Grineer Galleon",
+        "to": null,
+        "links": [
+          "Enceladus"
+        ]
+      },
+      {
+        "name": "Piscinas",
+        "x": -1.934502547628012,
+        "y": 0.4831782496388189,
+        "type": "Survival",
+        "kind": "dark",
+        "level": "26–36",
+        "faction": "Infested",
+        "tileset": "Grineer Asteroid",
+        "to": null,
+        "links": [
+          "Calypso",
+          "Rhea"
+        ]
+      },
+      {
+        "name": "Calypso",
+        "x": -1.1077308760238107,
+        "y": 0.5547602125482736,
+        "type": "Sabotage",
+        "kind": "mission",
+        "level": "24–26",
+        "faction": "Grineer",
+        "tileset": "Grineer Galleon",
+        "to": null,
+        "links": [
+          "Keeler",
+          "Piscinas"
+        ]
+      },
+      {
+        "name": "Helene",
+        "x": 1.2974230777338656,
+        "y": 0.5297065255299644,
+        "type": "Defense",
+        "kind": "mission",
+        "level": "21–26",
+        "faction": "Grineer",
+        "tileset": "Grineer Galleon",
+        "to": null,
+        "links": [
+          "Tethys",
+          "Enceladus"
+        ]
+      },
+      {
+        "name": "Tethys",
+        "x": 0.33464567660170047,
+        "y": 0.7659270031311648,
+        "type": "Assassination",
+        "kind": "boss",
+        "level": "24–26",
+        "faction": "Grineer",
+        "tileset": "Grineer Galleon",
+        "to": null,
+        "links": [
+          "Uranus Junction",
+          "Telesto",
+          "Helene",
+          "Keeler"
+        ]
+      },
+      {
+        "name": "Uranus Junction",
+        "x": 0.9466714594775377,
+        "y": 1.0110952260960469,
+        "type": "Solar Rail Junction",
+        "kind": "mission",
+        "level": "1–3",
+        "faction": "Tenno",
+        "tileset": "Solar Rail",
+        "to": null,
+        "links": [
+          "Sycorax",
+          "Tethys"
+        ]
+      },
+      {
+        "name": "To Uranus",
+        "x": 1.17215464264232,
+        "y": 1.1793128389332654,
+        "type": "",
+        "kind": "travel",
+        "level": "",
+        "faction": "",
+        "tileset": "",
+        "to": "Uranus",
+        "links": []
+      }
+    ],
+    "edges": [
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        5,
+        10
+      ],
+      [
+        6,
+        9
+      ],
+      [
+        7,
+        11
+      ],
+      [
+        7,
+        16
+      ],
+      [
+        9,
+        13
+      ],
+      [
+        10,
+        12
+      ],
+      [
+        10,
+        15
+      ],
+      [
+        11,
+        14
+      ],
+      [
+        11,
+        16
+      ],
+      [
+        13,
+        14
+      ],
+      [
+        15,
+        16
+      ],
+      [
+        16,
+        17
+      ]
+    ],
+    "title": true
+  },
+  "Uranus": {
+    "source": ".analysis\\web-assets\\StarChartUranusU32.jpg",
+    "cx": 817.5,
+    "cy": 616.5,
+    "radius": 335.79998779296875,
+    "nodes": [
+      {
+        "name": "Ur",
+        "x": 0.11465158248825327,
+        "y": -1.3326385237270997,
+        "type": "Disruption",
+        "kind": "dark",
+        "level": "30–35",
+        "faction": "Infested",
+        "tileset": "Grineer Galleon",
+        "to": null,
+        "links": [
+          "Cressida"
+        ]
+      },
+      {
+        "name": "Caelus",
+        "x": 0.8204288565068514,
+        "y": -0.969327015582505,
+        "type": "Interception",
+        "kind": "mission",
+        "level": "24–29",
+        "faction": "Grineer",
+        "tileset": "Free Space",
+        "to": null,
+        "links": [
+          "Cressida"
+        ]
+      },
+      {
+        "name": "Ophelia",
+        "x": -0.3052412261050899,
+        "y": -0.7980941326455033,
+        "type": "Survival",
+        "kind": "mission",
+        "level": "24–29",
+        "faction": "Grineer",
+        "tileset": "Grineer Sealab",
+        "to": null,
+        "links": [
+          "Puck",
+          "Umbriel"
+        ]
+      },
+      {
+        "name": "Cressida",
+        "x": 0.40946993745804744,
+        "y": -0.744490795378268,
+        "type": "Mobile Defense",
+        "kind": "mission",
+        "level": "27–29",
+        "faction": "Grineer",
+        "tileset": "Grineer Sealab",
+        "to": null,
+        "links": [
+          "Caelus",
+          "Titania",
+          "Ur",
+          "Ariel"
+        ]
+      },
+      {
+        "name": "Ariel",
+        "x": -0.6238832865269887,
+        "y": -0.36480048973535134,
+        "type": "Capture",
+        "kind": "mission",
+        "level": "25–27",
+        "faction": "Grineer",
+        "tileset": "Grineer Sealab",
+        "to": null,
+        "links": [
+          "Cressida",
+          "Sycorax"
+        ]
+      },
+      {
+        "name": "Rosalind",
+        "x": 0.37969030564291667,
+        "y": -0.2307921465672631,
+        "type": "Spy",
+        "kind": "mission",
+        "level": "27–29",
+        "faction": "Grineer",
+        "tileset": "Grineer Sealab",
+        "to": null,
+        "links": [
+          "Titania",
+          "Desdemona"
+        ]
+      },
+      {
+        "name": "Desdemona",
+        "x": -0.13847528794035785,
+        "y": -0.13698630634960132,
+        "type": "Sabotage",
+        "kind": "mission",
+        "level": "26–28",
+        "faction": "Grineer",
+        "tileset": "Grineer Sealab",
+        "to": null,
+        "links": [
+          "Rosalind",
+          "Brutus",
+          "Sycorax"
+        ]
+      },
+      {
+        "name": "Titania",
+        "x": 0.9067897887707305,
+        "y": -0.07742704271933988,
+        "type": "Assassination",
+        "kind": "boss",
+        "level": "27–29",
+        "faction": "Grineer",
+        "tileset": "Grineer Sealab",
+        "to": null,
+        "links": [
+          "Neptune Junction",
+          "Cressida",
+          "Puck",
+          "Rosalind"
+        ]
+      },
+      {
+        "name": "Sycorax",
+        "x": -1.0050625737606618,
+        "y": -0.0536033372672353,
+        "type": "Exterminate",
+        "kind": "mission",
+        "level": "24–26",
+        "faction": "Grineer",
+        "tileset": "Grineer Sealab",
+        "to": null,
+        "links": [
+          "Ariel",
+          "Caliban",
+          "Desdemona",
+          "Uranus Junction"
+        ]
+      },
+      {
+        "name": "To Saturn",
+        "x": -1.5530077991590672,
+        "y": 0.07296009794707027,
+        "type": "",
+        "kind": "travel",
+        "level": "",
+        "faction": "",
+        "tileset": "",
+        "to": "Saturn",
+        "links": []
+      },
+      {
+        "name": "Neptune Junction",
+        "x": 1.091423506024541,
+        "y": 0.11911852726052288,
+        "type": "Solar Rail Junction",
+        "kind": "mission",
+        "level": "1–3",
+        "faction": "Tenno",
+        "tileset": "Solar Rail",
+        "to": null,
+        "links": [
+          "Galatea",
+          "Titania"
+        ]
+      },
+      {
+        "name": "Stephano",
+        "x": -0.5494342069891618,
+        "y": 0.21739131225045427,
+        "type": "Defense",
+        "kind": "mission",
+        "level": "24–29",
+        "faction": "Grineer",
+        "tileset": "Grineer Sealab",
+        "to": null,
+        "links": [
+          "Umbriel",
+          "Caliban"
+        ]
+      },
+      {
+        "name": "To Neptune",
+        "x": 1.386241860994335,
+        "y": 0.34395474746475985,
+        "type": "",
+        "kind": "travel",
+        "level": "",
+        "faction": "",
+        "tileset": "",
+        "to": "Neptune",
+        "links": []
+      },
+      {
+        "name": "Puck",
+        "x": 0.41840382700258666,
+        "y": 0.4824300354051177,
+        "type": "Exterminate",
+        "kind": "mission",
+        "level": "27–29",
+        "faction": "Grineer",
+        "tileset": "Grineer Sealab",
+        "to": null,
+        "links": [
+          "Assur",
+          "Titania",
+          "Ophelia",
+          "Caliban"
+        ]
+      },
+      {
+        "name": "Caliban",
+        "x": -0.5821918019858056,
+        "y": 0.6566408815236324,
+        "type": "Rescue",
+        "kind": "mission",
+        "level": "25–27",
+        "faction": "Grineer",
+        "tileset": "Grineer Sealab",
+        "to": null,
+        "links": [
+          "Stephano",
+          "Puck",
+          "Sycorax"
+        ]
+      },
+      {
+        "name": "Assur",
+        "x": 0.9425253469488873,
+        "y": 0.7147111635631374,
+        "type": "Survival",
+        "kind": "dark",
+        "level": "25–35",
+        "faction": "Infested",
+        "tileset": "Grineer Galleon",
+        "to": null,
+        "links": [
+          "Puck"
+        ]
+      },
+      {
+        "name": "Umbriel",
+        "x": 0.08784991385463563,
+        "y": 0.8159619117345818,
+        "type": "Interception",
+        "kind": "mission",
+        "level": "24–29",
+        "faction": "Grineer",
+        "tileset": "Grineer Sealab",
+        "to": null,
+        "links": [
+          "Ophelia",
+          "Stephano"
+        ]
+      }
+    ],
+    "edges": [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        13
+      ],
+      [
+        2,
+        16
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        7,
+        10
+      ],
+      [
+        7,
+        13
+      ],
+      [
+        8,
+        14
+      ],
+      [
+        11,
+        14
+      ],
+      [
+        11,
+        16
+      ],
+      [
+        13,
+        14
+      ],
+      [
+        13,
+        15
+      ]
+    ],
+    "title": true
+  },
+  "Neptune": {
+    "source": ".analysis\\web-assets\\StarChartNeptuneU32.jpg",
+    "cx": 1108.5,
+    "cy": 550.5,
+    "radius": 349,
+    "nodes": [
+      {
+        "name": "Proteus",
+        "x": 0.3510028653295129,
+        "y": -1.024355300859599,
+        "type": "Defense",
+        "kind": "mission",
+        "level": "27–32",
+        "faction": "Corpus",
+        "tileset": "Corpus Ship",
+        "to": null,
+        "links": [
+          "Kelashin",
+          "Sao"
+        ]
+      },
+      {
+        "name": "Kelashin",
+        "x": 0.835243553008596,
+        "y": -0.9885386819484241,
+        "type": "Survival",
+        "kind": "dark",
+        "level": "30–40",
+        "faction": "Infested",
+        "tileset": "Infested Ship",
+        "to": null,
+        "links": [
+          "Proteus"
+        ]
+      },
+      {
+        "name": "To Pluto",
+        "x": 1.316618911174785,
+        "y": -0.8767908309455588,
+        "type": "",
+        "kind": "travel",
+        "level": "",
+        "faction": "",
+        "tileset": "",
+        "to": "Pluto",
+        "links": []
+      },
+      {
+        "name": "Sao",
+        "x": -0.14469914040114612,
+        "y": -0.7063037249283668,
+        "type": "Sabotage",
+        "kind": "mission",
+        "level": "29–31",
+        "faction": "Corpus",
+        "tileset": "Corpus Outpost",
+        "to": null,
+        "links": [
+          "Laomedeia",
+          "Proteus",
+          "Pluto Junction",
+          "Despina"
+        ]
+      },
+      {
+        "name": "Pluto Junction",
+        "x": 1.0702005730659025,
+        "y": -0.6418338108882522,
+        "type": "Solar Rail Junction",
+        "kind": "mission",
+        "level": "1–3",
+        "faction": "Tenno",
+        "tileset": "Solar Rail",
+        "to": null,
+        "links": [
+          "Hydra",
+          "Minthe",
+          "Orcus Relay",
+          "Psamathe"
+        ]
+      },
+      {
+        "name": "Despina",
+        "x": -0.5601719197707736,
+        "y": -0.5544412607449857,
+        "type": "Excavation",
+        "kind": "mission",
+        "level": "27–32",
+        "faction": "Corpus",
+        "tileset": "Corpus Outpost",
+        "to": null,
+        "links": [
+          "Sao",
+          "Galatea"
+        ]
+      },
+      {
+        "name": "Laomedeia",
+        "x": 0.23638968481375358,
+        "y": -0.22779369627507162,
+        "type": "Disruption",
+        "kind": "mission",
+        "level": "25–30",
+        "faction": "Corpus",
+        "tileset": "Corpus Ship",
+        "to": null,
+        "links": [
+          "Psamathe",
+          "Sao"
+        ]
+      },
+      {
+        "name": "Psamathe",
+        "x": 0.7636103151862464,
+        "y": -0.09312320916905444,
+        "type": "Assassination",
+        "kind": "boss",
+        "level": "30–32",
+        "faction": "Corpus",
+        "tileset": "Corpus Ship",
+        "to": null,
+        "links": [
+          "Pluto Junction",
+          "Laomedeia",
+          "Nereid"
+        ]
+      },
+      {
+        "name": "The Index: Endurance",
+        "x": -0.37679083094555876,
+        "y": -0.022922636103151862,
+        "type": "Arena",
+        "kind": "mission",
+        "level": "30–30",
+        "faction": "Corpus",
+        "tileset": "The Index",
+        "to": null,
+        "links": [
+          "Nereid"
+        ]
+      },
+      {
+        "name": "Triton",
+        "x": -1.0415472779369628,
+        "y": 0.40830945558739257,
+        "type": "Rescue",
+        "kind": "mission",
+        "level": "28–30",
+        "faction": "Corpus",
+        "tileset": "Corpus Ship",
+        "to": null,
+        "links": [
+          "Neso",
+          "Larissa",
+          "Galatea"
+        ]
+      },
+      {
+        "name": "Yursa",
+        "x": 1.1991404011461317,
+        "y": 0.3968481375358166,
+        "type": "Defection",
+        "kind": "dark",
+        "level": "30–40",
+        "faction": "Infested",
+        "tileset": "Infested Ship",
+        "to": null,
+        "links": [
+          "Salacia"
+        ]
+      },
+      {
+        "name": "Nereid",
+        "x": 0.2679083094555874,
+        "y": 0.49283667621776506,
+        "type": "Spy",
+        "kind": "mission",
+        "level": "30–32",
+        "faction": "Corpus",
+        "tileset": "Corpus Ice Planet",
+        "to": null,
+        "links": [
+          "Psamathe",
+          "The Index: Endurance",
+          "Neso"
+        ]
+      },
+      {
+        "name": "Neso",
+        "x": -0.30515759312320917,
+        "y": 0.7063037249283668,
+        "type": "Exterminate",
+        "kind": "mission",
+        "level": "29–31",
+        "faction": "Corpus",
+        "tileset": "Corpus Ice Planet",
+        "to": null,
+        "links": [
+          "Nereid",
+          "Salacia",
+          "Triton"
+        ]
+      },
+      {
+        "name": "Larissa",
+        "x": -1.015759312320917,
+        "y": 0.8638968481375359,
+        "type": "Mobile Defense",
+        "kind": "mission",
+        "level": "29–31",
+        "faction": "Corpus",
+        "tileset": "Corpus Ship",
+        "to": null,
+        "links": [
+          "Ukko",
+          "Triton"
+        ]
+      },
+      {
+        "name": "Salacia",
+        "x": 0.6260744985673352,
+        "y": 0.8624641833810889,
+        "type": "Mobile Defense",
+        "kind": "mission",
+        "level": "27–32",
+        "faction": "Corpus",
+        "tileset": "Corpus Ship (Archwing)",
+        "to": null,
+        "links": [
+          "Yursa",
+          "Neso"
+        ]
+      }
+    ],
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        7,
+        11
+      ],
+      [
+        8,
+        11
+      ],
+      [
+        9,
+        12
+      ],
+      [
+        9,
+        13
+      ],
+      [
+        10,
+        14
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        12,
+        14
+      ]
+    ],
+    "title": true
+  },
+  "Pluto": {
+    "source": ".analysis\\web-assets\\StarChartPlutoU32.jpg",
+    "cx": 1234.5,
+    "cy": 550.5,
+    "radius": 286.29998779296875,
+    "nodes": [
+      {
+        "name": "To Sedna",
+        "x": -0.9238561343958809,
+        "y": -1.3133077751714601,
+        "type": "",
+        "kind": "travel",
+        "level": "",
+        "faction": "",
+        "tileset": "",
+        "to": "Sedna",
+        "links": []
+      },
+      {
+        "name": "To Eris",
+        "x": -1.377925311981758,
+        "y": -1.0984981257750643,
+        "type": "",
+        "kind": "travel",
+        "level": "",
+        "faction": "",
+        "tileset": "",
+        "to": "Eris",
+        "links": []
+      },
+      {
+        "name": "Sedna Junction",
+        "x": -0.5151938745685914,
+        "y": -0.9849808313785952,
+        "type": "Junction",
+        "kind": "junction",
+        "level": "",
+        "faction": "",
+        "tileset": "",
+        "to": "Sedna",
+        "links": []
+      },
+      {
+        "name": "Hieracon",
+        "x": -0.13796717318955498,
+        "y": -0.8347887187924973,
+        "type": "Excavation",
+        "kind": "dark",
+        "level": "35–45",
+        "faction": "Infested",
+        "tileset": "Corpus Outpost",
+        "to": null,
+        "links": [
+          "Regna"
+        ]
+      },
+      {
+        "name": "Eris Junction",
+        "x": -1.3953895111196764,
+        "y": -0.7142857447408607,
+        "type": "Solar Rail Junction",
+        "kind": "mission",
+        "level": "1–1",
+        "faction": "Tenno",
+        "tileset": "Solar Rail",
+        "to": null,
+        "links": [
+          "Naeglar",
+          "Acheron"
+        ]
+      },
+      {
+        "name": "Hades",
+        "x": 0.3405518831894079,
+        "y": -0.7195250044822362,
+        "type": "Assassination",
+        "kind": "boss",
+        "level": "35–45",
+        "faction": "Corpus",
+        "tileset": "Corpus Outpost",
+        "to": null,
+        "links": [
+          "Palus"
+        ]
+      },
+      {
+        "name": "Regna",
+        "x": -0.3824659611204119,
+        "y": -0.5501222728444282,
+        "type": "Rescue",
+        "kind": "mission",
+        "level": "34–38",
+        "faction": "Corpus",
+        "tileset": "Corpus Outpost",
+        "to": null,
+        "links": [
+          "Hieracon",
+          "Sedna Junction",
+          "Oceanum"
+        ]
+      },
+      {
+        "name": "Palus",
+        "x": 0.986727251292387,
+        "y": -0.3754802814652446,
+        "type": "Survival",
+        "kind": "mission",
+        "level": "30–40",
+        "faction": "Corpus",
+        "tileset": "Corpus Ship",
+        "to": null,
+        "links": [
+          "Hades",
+          "Cerberus"
+        ]
+      },
+      {
+        "name": "Sechura",
+        "x": 0.42088719922383233,
+        "y": -0.2584701472411916,
+        "type": "Defense",
+        "kind": "dark",
+        "level": "35–45",
+        "faction": "Infested",
+        "tileset": "Corpus Outpost",
+        "to": null,
+        "links": [
+          "Outer Terminus"
+        ]
+      },
+      {
+        "name": "Oceanum",
+        "x": -0.3894516407755793,
+        "y": 0.1728955714653917,
+        "type": "Spy",
+        "kind": "mission",
+        "level": "32–36",
+        "faction": "Corpus",
+        "tileset": "Corpus Ship",
+        "to": null,
+        "links": [
+          "Acheron",
+          "Regna",
+          "Outer Terminus",
+          "Minthe"
+        ]
+      },
+      {
+        "name": "Orcus Relay",
+        "x": -1.1928048011198236,
+        "y": 0.39119806068937113,
+        "type": "Relay",
+        "kind": "mission",
+        "level": "0–0",
+        "faction": "Tenno",
+        "tileset": "Relay",
+        "to": null,
+        "links": [
+          "Pluto Junction"
+        ]
+      },
+      {
+        "name": "Cypress",
+        "x": 1.0111771300854726,
+        "y": 0.5064617749996323,
+        "type": "Sabotage",
+        "kind": "mission",
+        "level": "34–38",
+        "faction": "Corpus",
+        "tileset": "Corpus Ship",
+        "to": null,
+        "links": [
+          "Cerberus",
+          "Narcissus"
+        ]
+      },
+      {
+        "name": "Minthe",
+        "x": -0.6025148702581832,
+        "y": 0.6287111689650607,
+        "type": "Mobile Defense",
+        "kind": "mission",
+        "level": "30–34",
+        "faction": "Corpus",
+        "tileset": "Corpus Outpost",
+        "to": null,
+        "links": [
+          "Oceanum",
+          "Pluto Junction"
+        ]
+      },
+      {
+        "name": "Narcissus",
+        "x": 0.29863780525840383,
+        "y": 0.6444289481891873,
+        "type": "Exterminate",
+        "kind": "mission",
+        "level": "32–36",
+        "faction": "Corpus",
+        "tileset": "Corpus Outpost",
+        "to": null,
+        "links": [
+          "Cypress",
+          "Outer Terminus",
+          "Hydra"
+        ]
+      },
+      {
+        "name": "Hydra",
+        "x": -0.07160321646546525,
+        "y": 1.1002445456888563,
+        "type": "Capture",
+        "kind": "mission",
+        "level": "30–34",
+        "faction": "Corpus",
+        "tileset": "Corpus Ship",
+        "to": null,
+        "links": [
+          "Narcissus",
+          "Pluto Junction"
+        ]
+      },
+      {
+        "name": "To Neptune",
+        "x": -0.7806497014649504,
+        "y": 1.3168006149990439,
+        "type": "",
+        "kind": "travel",
+        "level": "",
+        "faction": "",
+        "tileset": "",
+        "to": "Neptune",
+        "links": []
+      }
+    ],
+    "edges": [
+      [
+        2,
+        6
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        6,
+        9
+      ],
+      [
+        9,
+        12
+      ],
+      [
+        11,
+        13
+      ],
+      [
+        13,
+        14
+      ]
+    ],
+    "title": true
+  },
+  "Sedna": {
+    "source": ".analysis\\web-assets\\StarChartSednaU32.jpg",
+    "cx": 1066.5,
+    "cy": 613.5,
+    "radius": 292.8999938964844,
+    "nodes": [
+      {
+        "name": "Amarna",
+        "x": 0.8552407143051385,
+        "y": -1.4202799886264974,
+        "type": "Survival",
+        "kind": "dark",
+        "level": "35–45",
+        "faction": "Infested",
+        "tileset": "Grineer Galleon",
+        "to": null,
+        "links": [
+          "Hydron"
+        ]
+      },
+      {
+        "name": "Kappa",
+        "x": 1.4083305175683418,
+        "y": -1.29224994157483,
+        "type": "Disruption",
+        "kind": "mission",
+        "level": "34–38",
+        "faction": "Grineer",
+        "tileset": "Grineer Galleon",
+        "to": null,
+        "links": [
+          "Hydron"
+        ]
+      },
+      {
+        "name": "Hydron",
+        "x": 0.7767156187801157,
+        "y": -0.9696142230046281,
+        "type": "Defense",
+        "kind": "mission",
+        "level": "30–40",
+        "faction": "Grineer",
+        "tileset": "Grineer Galleon",
+        "to": null,
+        "links": [
+          "Amarna",
+          "Kappa",
+          "Rusalka"
+        ]
+      },
+      {
+        "name": "Merrow",
+        "x": 0.05974735529077814,
+        "y": -0.8347559067768717,
+        "type": "Assassination",
+        "kind": "boss",
+        "level": "35–40",
+        "faction": "Grineer",
+        "tileset": "Grineer Asteroid",
+        "to": null,
+        "links": [
+          "Nakki"
+        ]
+      },
+      {
+        "name": "Yam",
+        "x": -0.4933424479724252,
+        "y": -0.6264936969061593,
+        "type": "Arena",
+        "kind": "mission",
+        "level": "60–60",
+        "faction": "Grineer",
+        "tileset": "Grineer Sealab",
+        "to": null,
+        "links": [
+          "Vodyanoi",
+          "Nakki"
+        ]
+      },
+      {
+        "name": "Berehynia",
+        "x": 0.5206555246767809,
+        "y": -0.5240696592648254,
+        "type": "Interception",
+        "kind": "mission",
+        "level": "30–40",
+        "faction": "Grineer",
+        "tileset": "Grineer Shipyard",
+        "to": null,
+        "links": [
+          "Sangeru",
+          "Rusalka"
+        ]
+      },
+      {
+        "name": "Vodyanoi",
+        "x": -0.8245135030127383,
+        "y": -0.3499487952745577,
+        "type": "Arena",
+        "kind": "mission",
+        "level": "85–85",
+        "faction": "Grineer",
+        "tileset": "Grineer Sealab",
+        "to": null,
+        "links": [
+          "Yam"
+        ]
+      },
+      {
+        "name": "Rusalka",
+        "x": 1.1556845580530515,
+        "y": -0.35336292986260215,
+        "type": "Sabotage",
+        "kind": "mission",
+        "level": "32–36",
+        "faction": "Grineer",
+        "tileset": "Grineer Galleon",
+        "to": null,
+        "links": [
+          "Berehynia",
+          "Hydron",
+          "Naga"
+        ]
+      },
+      {
+        "name": "Nakki",
+        "x": -0.28508023810171285,
+        "y": -0.21338341175277906,
+        "type": "Arena",
+        "kind": "mission",
+        "level": "40–40",
+        "faction": "Grineer",
+        "tileset": "Grineer Shipyard",
+        "to": null,
+        "links": [
+          "Merrow",
+          "Yam",
+          "Marid"
+        ]
+      },
+      {
+        "name": "Sangeru",
+        "x": 0.21679754634082352,
+        "y": 0.04609081693860028,
+        "type": "Defense",
+        "kind": "dark",
+        "level": "35–45",
+        "faction": "Infested",
+        "tileset": "Grineer Asteroid",
+        "to": null,
+        "links": [
+          "Berehynia"
+        ]
+      },
+      {
+        "name": "To Void",
+        "x": -1.6985319575521214,
+        "y": 0.13485831622775638,
+        "type": "",
+        "kind": "travel",
+        "level": "",
+        "faction": "",
+        "tileset": "",
+        "to": "Void",
+        "links": []
+      },
+      {
+        "name": "Naga",
+        "x": 1.2137248460498073,
+        "y": 0.1160805759935118,
+        "type": "Rescue",
+        "kind": "mission",
+        "level": "30–34",
+        "faction": "Grineer",
+        "tileset": "Grineer Galleon",
+        "to": null,
+        "links": [
+          "Adaro",
+          "Rusalka",
+          "Sedna Junction"
+        ]
+      },
+      {
+        "name": "Marid",
+        "x": -0.42847389079958037,
+        "y": 0.3123933148060685,
+        "type": "Hijack",
+        "kind": "mission",
+        "level": "34–38",
+        "faction": "Grineer",
+        "tileset": "Grineer Shipyard",
+        "to": null,
+        "links": [
+          "Nakki",
+          "Selkie"
+        ]
+      },
+      {
+        "name": "Adaro",
+        "x": 0.6435643698463817,
+        "y": 0.36189826633271327,
+        "type": "Exterminate",
+        "kind": "mission",
+        "level": "32–36",
+        "faction": "Grineer",
+        "tileset": "Grineer Asteroid",
+        "to": null,
+        "links": [
+          "Selkie",
+          "Naga"
+        ]
+      },
+      {
+        "name": "To Pluto",
+        "x": 1.7941277260173665,
+        "y": 0.40628201597729136,
+        "type": "",
+        "kind": "travel",
+        "level": "",
+        "faction": "",
+        "tileset": "",
+        "to": "Pluto",
+        "links": []
+      },
+      {
+        "name": "Kelpie",
+        "x": -1.0532605204117174,
+        "y": 0.440423361857736,
+        "type": "Spy",
+        "kind": "mission",
+        "level": "35–40",
+        "faction": "Grineer",
+        "tileset": "Grineer Galleon",
+        "to": null,
+        "links": [
+          "Aten",
+          "Charybdis"
+        ]
+      },
+      {
+        "name": "Selkie",
+        "x": 0.23728235386909033,
+        "y": 0.7903721571322937,
+        "type": "Survival",
+        "kind": "mission",
+        "level": "30–40",
+        "faction": "Grineer",
+        "tileset": "Grineer Asteroid",
+        "to": null,
+        "links": [
+          "Charybdis",
+          "Marid",
+          "Adaro"
+        ]
+      },
+      {
+        "name": "Charybdis",
+        "x": -0.6538067736105151,
+        "y": 0.8688972526573163,
+        "type": "Mobile Defense",
+        "kind": "mission",
+        "level": "34–38",
+        "faction": "Grineer",
+        "tileset": "Grineer Galleon",
+        "to": null,
+        "links": [
+          "Kelpie",
+          "Selkie"
+        ]
+      }
+    ],
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        7,
+        11
+      ],
+      [
+        8,
+        12
+      ],
+      [
+        11,
+        13
+      ],
+      [
+        12,
+        16
+      ],
+      [
+        13,
+        16
+      ],
+      [
+        15,
+        17
+      ],
+      [
+        16,
+        17
+      ]
+    ],
+    "title": true
+  },
+  "Eris": {
+    "source": ".analysis\\web-assets\\StarChartErisU32.jpg",
+    "cx": 1045.5,
+    "cy": 499.5,
+    "radius": 259.8999938964844,
+    "nodes": [
+      {
+        "name": "Akkad",
+        "x": 0.4290111682126832,
+        "y": -0.9292035616445112,
+        "type": "Defense",
+        "kind": "mission",
+        "level": "35–45",
+        "faction": "Infested",
+        "tileset": "Infested Ship",
+        "to": null,
+        "links": [
+          "Nimus"
+        ]
+      },
+      {
+        "name": "Mutalist Alad V Assassinate",
+        "x": -1.040784941717765,
+        "y": -0.8099269139799984,
+        "type": "Assassination",
+        "kind": "boss",
+        "level": "30–35",
+        "faction": "Infested",
+        "tileset": "Infested Ship",
+        "to": null,
+        "links": []
+      },
+      {
+        "name": "Nimus",
+        "x": 0.9176606602576228,
+        "y": -0.46363987237334825,
+        "type": "Survival",
+        "kind": "mission",
+        "level": "30–40",
+        "faction": "Infested",
+        "tileset": "Infested Ship",
+        "to": null,
+        "links": [
+          "Akkad",
+          "Solium"
+        ]
+      },
+      {
+        "name": "Zabala",
+        "x": -1.4217006874850802,
+        "y": -0.36360139368698263,
+        "type": "Survival",
+        "kind": "mission",
+        "level": "35–45",
+        "faction": "Infested",
+        "tileset": "Infested Ship",
+        "to": null,
+        "links": [
+          "Xini"
+        ]
+      },
+      {
+        "name": "Kuiper Relay",
+        "x": 1.7295113911354358,
+        "y": -0.1750673377011398,
+        "type": "Relay",
+        "kind": "relay",
+        "level": "",
+        "faction": "Tenno",
+        "tileset": "",
+        "to": null,
+        "links": []
+      },
+      {
+        "name": "Oestrus",
+        "x": 0.7522124070455567,
+        "y": -0.017314352080332506,
+        "type": "Infested Salvage",
+        "kind": "mission",
+        "level": "34–38",
+        "faction": "Infested",
+        "tileset": "Infested Ship",
+        "to": null,
+        "links": [
+          "Isos"
+        ]
+      },
+      {
+        "name": "Solium",
+        "x": 1.4255483212807096,
+        "y": 0.24624856292028455,
+        "type": "Mobile Defense",
+        "kind": "mission",
+        "level": "34–38",
+        "faction": "Infested",
+        "tileset": "Infested Ship",
+        "to": null,
+        "links": [
+          "Nimus",
+          "Isos"
+        ]
+      },
+      {
+        "name": "Xini",
+        "x": -1.4909580958064104,
+        "y": 0.3770681119716857,
+        "type": "Interception",
+        "kind": "mission",
+        "level": "30–40",
+        "faction": "Infested",
+        "tileset": "Corpus Ship",
+        "to": null,
+        "links": [
+          "Zabala",
+          "Kala-azar"
+        ]
+      },
+      {
+        "name": "Saxis",
+        "x": -1.0253944065352474,
+        "y": 0.6233166748919703,
+        "type": "Exterminate",
+        "kind": "mission",
+        "level": "34–38",
+        "faction": "Infested",
+        "tileset": "Infested Ship",
+        "to": null,
+        "links": [
+          "Brugia"
+        ]
+      },
+      {
+        "name": "To Pluto",
+        "x": 1.798768799456766,
+        "y": 0.5983070552203789,
+        "type": "",
+        "kind": "travel",
+        "level": "",
+        "faction": "",
+        "tileset": "",
+        "to": "Pluto",
+        "links": []
+      },
+      {
+        "name": "Kala-azar",
+        "x": -1.0946518148565774,
+        "y": 1.0292420403308769,
+        "type": "Defense",
+        "kind": "mission",
+        "level": "30–40",
+        "faction": "Infested",
+        "tileset": "Infested Ship",
+        "to": null,
+        "links": [
+          "Xini",
+          "Brugia"
+        ]
+      },
+      {
+        "name": "Brugia",
+        "x": -0.17121970390551033,
+        "y": 1.2177760963167197,
+        "type": "Rescue",
+        "kind": "mission",
+        "level": "32–36",
+        "faction": "Infested",
+        "tileset": "Infested Ship",
+        "to": null,
+        "links": [
+          "Kala-azar",
+          "Saxis",
+          "Naeglar"
+        ]
+      },
+      {
+        "name": "Naeglar",
+        "x": 0.8060792801843689,
+        "y": 1.3197383919009,
+        "type": "Sabotage",
+        "kind": "mission",
+        "level": "30–34",
+        "faction": "Infested",
+        "tileset": "Infested Ship",
+        "to": null,
+        "links": [
+          "Brugia",
+          "Isos",
+          "Eris Junction"
+        ]
+      }
+    ],
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        7,
+        10
+      ],
+      [
+        8,
+        11
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        11,
+        12
+      ]
+    ],
+    "title": true
+  },
+  "Lua": {
+    "source": ".analysis\\web-assets\\StarChartLuaU32.2.jpg",
+    "cx": 1192.5,
+    "cy": 538.5,
+    "radius": 295.8999938964844,
+    "nodes": [
+      {
+        "name": "Zeipel",
+        "x": 0.10645488560239627,
+        "y": -0.7316661185053586,
+        "type": "Rescue",
+        "kind": "mission",
+        "level": "25–30",
+        "faction": "Corpus",
+        "tileset": "Orokin Moon",
+        "to": null,
+        "links": [
+          "Tycho",
+          "Plato"
+        ]
+      },
+      {
+        "name": "Plato",
+        "x": -0.5829672306797892,
+        "y": -0.48158162534417365,
+        "type": "Exterminate",
+        "kind": "mission",
+        "level": "25–30",
+        "faction": "",
+        "tileset": "Orokin Moon",
+        "to": null,
+        "links": [
+          "Copernicus",
+          "Zeipel",
+          "Cervantes"
+        ]
+      },
+      {
+        "name": "Copernicus",
+        "x": 0.1368705672030809,
+        "y": -0.35484961867465425,
+        "type": "Capture",
+        "kind": "mission",
+        "level": "25–30",
+        "faction": "Corpus",
+        "tileset": "Orokin Moon",
+        "to": null,
+        "links": [
+          "Grimaldi",
+          "Plato"
+        ]
+      },
+      {
+        "name": "Tycho",
+        "x": 0.7384251588610662,
+        "y": -0.26698209405045414,
+        "type": "Survival",
+        "kind": "mission",
+        "level": "25–30",
+        "faction": "Corpus",
+        "tileset": "Orokin Moon",
+        "to": null,
+        "links": [
+          "Pavlov",
+          "Zeipel"
+        ]
+      },
+      {
+        "name": "To Earth",
+        "x": -1.7624197727507829,
+        "y": -0.011828320622488476,
+        "type": "",
+        "kind": "travel",
+        "level": "",
+        "faction": "",
+        "tileset": "",
+        "to": "Earth",
+        "links": []
+      },
+      {
+        "name": "Circulus",
+        "x": -0.7012504369046739,
+        "y": 0.059141603112442376,
+        "type": "Survival",
+        "kind": "mission",
+        "level": "80–100",
+        "faction": "Corrupted",
+        "tileset": "Orokin Moon",
+        "to": null,
+        "links": [
+          "Yuvarium"
+        ]
+      },
+      {
+        "name": "Yuvarium",
+        "x": -0.26867185413938105,
+        "y": 0.0608313632013693,
+        "type": "Survival",
+        "kind": "mission",
+        "level": "25–30",
+        "faction": "Corrupted",
+        "tileset": "Orokin Moon",
+        "to": null,
+        "links": [
+          "Circulus",
+          "Grimaldi"
+        ]
+      },
+      {
+        "name": "Grimaldi",
+        "x": 0.22135857164942718,
+        "y": 0.067590403557077,
+        "type": "Mobile Defense",
+        "kind": "mission",
+        "level": "25–30",
+        "faction": "Grineer",
+        "tileset": "Orokin Moon",
+        "to": null,
+        "links": [
+          "Stöfler",
+          "Yuvarium",
+          "Copernicus"
+        ]
+      },
+      {
+        "name": "Pavlov",
+        "x": 0.7046299570825277,
+        "y": 0.35315985858572735,
+        "type": "Spy",
+        "kind": "mission",
+        "level": "25–30",
+        "faction": "",
+        "tileset": "Orokin Moon",
+        "to": null,
+        "links": [
+          "Apollo",
+          "Tycho"
+        ]
+      },
+      {
+        "name": "Stöfler",
+        "x": 0.008448800444634625,
+        "y": 0.48158162534417365,
+        "type": "Defense",
+        "kind": "mission",
+        "level": "25–30",
+        "faction": "Grineer",
+        "tileset": "Orokin Moon",
+        "to": null,
+        "links": [
+          "Apollo",
+          "Grimaldi"
+        ]
+      },
+      {
+        "name": "Apollo",
+        "x": -0.4917201858777352,
+        "y": 0.6336600333475969,
+        "type": "Disruption",
+        "kind": "mission",
+        "level": "35–40",
+        "faction": "Corpus",
+        "tileset": "Orokin Moon",
+        "to": null,
+        "links": [
+          "Pavlov",
+          "Stöfler"
+        ]
+      }
+    ],
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        7,
+        9
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        9,
+        10
+      ]
+    ],
+    "title": false
+  },
+  "Void": {
+    "source": ".analysis\\web-assets\\StarChartVoidU32.jpg",
+    "cx": 1000,
+    "cy": 600,
+    "radius": 340,
+    "nodes": [
+      {
+        "name": "Teshub",
+        "x": -0.09705882352941177,
+        "y": -1.0102941176470588,
+        "type": "Exterminate",
+        "kind": "mission",
+        "level": "10–15",
+        "faction": "Corrupted",
+        "tileset": "Orokin Tower",
+        "to": null,
+        "links": [
+          "Hepit",
+          "Stickney"
+        ]
+      },
+      {
+        "name": "To Phobos",
+        "x": 0.3558823529411765,
+        "y": -1.0102941176470588,
+        "type": "",
+        "kind": "travel",
+        "level": "",
+        "faction": "",
+        "tileset": "",
+        "to": "Phobos",
+        "links": []
+      },
+      {
+        "name": "Aten",
+        "x": -1.8794117647058823,
+        "y": -0.9691176470588235,
+        "type": "Mobile Defense",
+        "kind": "mission",
+        "level": "40–45",
+        "faction": "Corrupted",
+        "tileset": "Orokin Tower",
+        "to": null,
+        "links": [
+          "Marduk",
+          "Kelpie"
+        ]
+      },
+      {
+        "name": "To Sedna",
+        "x": -1.4147058823529413,
+        "y": -0.8323529411764706,
+        "type": "",
+        "kind": "travel",
+        "level": "",
+        "faction": "",
+        "tileset": "",
+        "to": "Sedna",
+        "links": []
+      },
+      {
+        "name": "Hepit",
+        "x": -0.2235294117647059,
+        "y": -0.5691176470588235,
+        "type": "Capture",
+        "kind": "mission",
+        "level": "10–15",
+        "faction": "Corrupted",
+        "tileset": "Orokin Tower",
+        "to": null,
+        "links": [
+          "Taranis",
+          "Teshub"
+        ]
+      },
+      {
+        "name": "Marduk",
+        "x": -1.7117647058823529,
+        "y": -0.5044117647058823,
+        "type": "Sabotage",
+        "kind": "mission",
+        "level": "40–45",
+        "faction": "Corrupted",
+        "tileset": "Orokin Tower",
+        "to": null,
+        "links": [
+          "Mithra",
+          "Aten"
+        ]
+      },
+      {
+        "name": "Taranis",
+        "x": -0.7588235294117647,
+        "y": -0.5029411764705882,
+        "type": "Defense",
+        "kind": "mission",
+        "level": "10–15",
+        "faction": "Corrupted",
+        "tileset": "Orokin Tower",
+        "to": null,
+        "links": [
+          "Hepit"
+        ]
+      },
+      {
+        "name": "Mithra",
+        "x": -1.3647058823529412,
+        "y": -0.35,
+        "type": "Interception",
+        "kind": "mission",
+        "level": "40–45",
+        "faction": "Corrupted",
+        "tileset": "Orokin Tower",
+        "to": null,
+        "links": [
+          "Mot",
+          "Marduk"
+        ]
+      },
+      {
+        "name": "To Europa",
+        "x": 0.5058823529411764,
+        "y": -0.31029411764705883,
+        "type": "",
+        "kind": "travel",
+        "level": "",
+        "faction": "",
+        "tileset": "",
+        "to": "Europa",
+        "links": []
+      },
+      {
+        "name": "Mot",
+        "x": -1.138235294117647,
+        "y": -0.07941176470588235,
+        "type": "Survival",
+        "kind": "mission",
+        "level": "40–45",
+        "faction": "Corrupted",
+        "tileset": "Orokin Tower",
+        "to": null,
+        "links": [
+          "Mithra"
+        ]
+      },
+      {
+        "name": "Tiwaz",
+        "x": 0.4117647058823529,
+        "y": 0.041176470588235294,
+        "type": "Mobile Defense",
+        "kind": "mission",
+        "level": "20–25",
+        "faction": "Corrupted",
+        "tileset": "Orokin Tower",
+        "to": null,
+        "links": [
+          "Stribog",
+          "Baal"
+        ]
+      },
+      {
+        "name": "Belenus",
+        "x": -1.3794117647058823,
+        "y": 0.1264705882352941,
+        "type": "Defense",
+        "kind": "mission",
+        "level": "30–35",
+        "faction": "Corrupted",
+        "tileset": "Orokin Tower",
+        "to": null,
+        "links": [
+          "Oxomoco"
+        ]
+      },
+      {
+        "name": "Ani",
+        "x": -0.4764705882352941,
+        "y": 0.22941176470588234,
+        "type": "Survival",
+        "kind": "mission",
+        "level": "20–25",
+        "faction": "Corrupted",
+        "tileset": "Orokin Tower",
+        "to": null,
+        "links": [
+          "Stribog"
+        ]
+      },
+      {
+        "name": "Oxomoco",
+        "x": -1.7647058823529411,
+        "y": 0.3779411764705882,
+        "type": "Exterminate",
+        "kind": "mission",
+        "level": "30–35",
+        "faction": "Corrupted",
+        "tileset": "Orokin Tower",
+        "to": null,
+        "links": [
+          "Belenus",
+          "Ukko"
+        ]
+      },
+      {
+        "name": "Stribog",
+        "x": 0.6323529411764706,
+        "y": 0.4411764705882353,
+        "type": "Sabotage",
+        "kind": "mission",
+        "level": "20–25",
+        "faction": "Corrupted",
+        "tileset": "Orokin Tower",
+        "to": null,
+        "links": [
+          "Ani",
+          "Tiwaz"
+        ]
+      },
+      {
+        "name": "Ukko",
+        "x": -0.9470588235294117,
+        "y": 0.49264705882352944,
+        "type": "Capture",
+        "kind": "mission",
+        "level": "30–35",
+        "faction": "Corrupted",
+        "tileset": "Orokin Tower",
+        "to": null,
+        "links": [
+          "Oxomoco",
+          "Larissa"
+        ]
+      },
+      {
+        "name": "To Neptune",
+        "x": -0.47941176470588237,
+        "y": 0.7955882352941176,
+        "type": "",
+        "kind": "travel",
+        "level": "",
+        "faction": "",
+        "tileset": "",
+        "to": "Neptune",
+        "links": []
+      }
+    ],
+    "edges": [
+      [
+        0,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        7,
+        9
+      ],
+      [
+        10,
+        14
+      ],
+      [
+        11,
+        13
+      ],
+      [
+        12,
+        14
+      ],
+      [
+        13,
+        15
+      ]
+    ],
+    "title": true
+  },
+  "Deimos": {
+    "source": ".analysis\\web-assets\\StarChartDeimosU32.jpg",
+    "cx": 965,
+    "cy": 574,
+    "radius": 345,
+    "nodes": [
+      {
+        "name": "To Mars",
+        "x": 0.45507246376811594,
+        "y": -0.8,
+        "type": "",
+        "kind": "travel",
+        "level": "",
+        "faction": "",
+        "tileset": "",
+        "to": "Mars",
+        "links": []
+      },
+      {
+        "name": "Horend",
+        "x": -0.45217391304347826,
+        "y": -0.7608695652173914,
+        "type": "Capture",
+        "kind": "mission",
+        "level": "12–14",
+        "faction": "Infested",
+        "tileset": "Orokin Derelict",
+        "to": null,
+        "links": [
+          "Phlegyas",
+          "War"
+        ]
+      },
+      {
+        "name": "Phlegyas",
+        "x": -0.8057971014492754,
+        "y": -0.6144927536231884,
+        "type": "Exterminate",
+        "kind": "mission",
+        "level": "13–15",
+        "faction": "Infested",
+        "tileset": "Orokin Derelict",
+        "to": null,
+        "links": [
+          "Cambion Drift",
+          "Formido",
+          "Horend"
+        ]
+      },
+      {
+        "name": "Necralisk",
+        "x": -0.06666666666666667,
+        "y": -0.41739130434782606,
+        "type": "Hub",
+        "kind": "mission",
+        "level": "0–0",
+        "faction": "Tenno",
+        "tileset": "Necralisk",
+        "to": null,
+        "links": [
+          "Sanctum Anatomica",
+          "Cambion Drift"
+        ]
+      },
+      {
+        "name": "Cambion Drift",
+        "x": -0.5072463768115942,
+        "y": -0.33043478260869563,
+        "type": "Free Roam",
+        "kind": "open",
+        "level": "20–35",
+        "faction": "Infested",
+        "tileset": "Cambion Drift",
+        "to": null,
+        "links": [
+          "Necralisk",
+          "Phlegyas"
+        ]
+      },
+      {
+        "name": "Formido",
+        "x": -1.0057971014492753,
+        "y": -0.1826086956521739,
+        "type": "Sabotage",
+        "kind": "mission",
+        "level": "14–16",
+        "faction": "Infested",
+        "tileset": "Orokin Derelict",
+        "to": null,
+        "links": [
+          "Dirus",
+          "Hyf",
+          "Phlegyas"
+        ]
+      },
+      {
+        "name": "Dirus",
+        "x": -0.3739130434782609,
+        "y": 0.07681159420289856,
+        "type": "Mobile Defense",
+        "kind": "mission",
+        "level": "15–17",
+        "faction": "Infested",
+        "tileset": "Orokin Derelict",
+        "to": null,
+        "links": [
+          "Magnacidium",
+          "Formido"
+        ]
+      },
+      {
+        "name": "Hyf",
+        "x": -0.7217391304347827,
+        "y": 0.23043478260869565,
+        "type": "Defense",
+        "kind": "mission",
+        "level": "15–20",
+        "faction": "Infested",
+        "tileset": "Orokin Derelict",
+        "to": null,
+        "links": [
+          "Magnacidium",
+          "Formido"
+        ]
+      },
+      {
+        "name": "Exequias",
+        "x": 0.9652173913043478,
+        "y": 0.2608695652173913,
+        "type": "Assassination",
+        "kind": "boss",
+        "level": "30–35",
+        "faction": "Infested",
+        "tileset": "Orokin Derelict",
+        "to": null,
+        "links": [
+          "Terrorem"
+        ]
+      },
+      {
+        "name": "Magnacidium",
+        "x": -0.06666666666666667,
+        "y": 0.5681159420289855,
+        "type": "Assassination",
+        "kind": "boss",
+        "level": "20–25",
+        "faction": "Infested",
+        "tileset": "Orokin Derelict",
+        "to": null,
+        "links": [
+          "Terrorem",
+          "Dirus",
+          "Hyf"
+        ]
+      },
+      {
+        "name": "Terrorem",
+        "x": 0.5826086956521739,
+        "y": 0.7115942028985507,
+        "type": "Survival",
+        "kind": "mission",
+        "level": "25–35",
+        "faction": "Infested",
+        "tileset": "Orokin Derelict",
+        "to": null,
+        "links": [
+          "Exequias",
+          "Magnacidium"
+        ]
+      }
+    ],
+    "edges": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        6,
+        9
+      ],
+      [
+        7,
+        9
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        9,
+        10
+      ]
+    ],
+    "title": false
+  },
+  "Kuva Fortress": {
+    "source": ".analysis\\web-assets\\StarChartKuvaFortressU32.jpg",
+    "cx": 815,
+    "cy": 584,
+    "radius": 300,
+    "nodes": [
+      {
+        "name": "Tamu",
+        "x": -0.7033333333333334,
+        "y": -0.8766666666666667,
+        "type": "Disruption",
+        "kind": "mission",
+        "level": "35–40",
+        "faction": "Grineer",
+        "tileset": "Grineer Asteroid Fortress",
+        "to": null,
+        "links": [
+          "Garus"
+        ]
+      },
+      {
+        "name": "Taveuni",
+        "x": 0.1,
+        "y": -0.8616666666666667,
+        "type": "Survival",
+        "kind": "mission",
+        "level": "32–37",
+        "faction": "Grineer",
+        "tileset": "Grineer Asteroid Fortress",
+        "to": null,
+        "links": [
+          "Pago"
+        ]
+      },
+      {
+        "name": "Garus",
+        "x": -0.31,
+        "y": -0.4633333333333333,
+        "type": "Rescue",
+        "kind": "mission",
+        "level": "31–33",
+        "faction": "Grineer",
+        "tileset": "Grineer Asteroid Fortress",
+        "to": null,
+        "links": [
+          "Tamu",
+          "Rotuma"
+        ]
+      },
+      {
+        "name": "Pago",
+        "x": 0.43333333333333335,
+        "y": -0.4533333333333333,
+        "type": "Spy",
+        "kind": "mission",
+        "level": "31–33",
+        "faction": "Grineer",
+        "tileset": "Grineer Asteroid Fortress",
+        "to": null,
+        "links": [
+          "Taveuni",
+          "Nabuk"
+        ]
+      },
+      {
+        "name": "Nabuk",
+        "x": 0.20333333333333334,
+        "y": -0.028333333333333332,
+        "type": "Defense",
+        "kind": "mission",
+        "level": "30–32",
+        "faction": "Grineer",
+        "tileset": "Grineer Asteroid Fortress",
+        "to": null,
+        "links": [
+          "Pago",
+          "Koro"
+        ]
+      },
+      {
+        "name": "Rotuma",
+        "x": -0.41333333333333333,
+        "y": 0.058333333333333334,
+        "type": "Mobile Defense",
+        "kind": "mission",
+        "level": "30–32",
+        "faction": "Grineer",
+        "tileset": "Grineer Asteroid Fortress",
+        "to": null,
+        "links": [
+          "Garus",
+          "Koro"
+        ]
+      },
+      {
+        "name": "Koro",
+        "x": 0.2,
+        "y": 0.4666666666666667,
+        "type": "Assault",
+        "kind": "mission",
+        "level": "29–31",
+        "faction": "Grineer",
+        "tileset": "Grineer Asteroid Fortress",
+        "to": null,
+        "links": [
+          "Rotuma",
+          "Nabuk",
+          "Dakata"
+        ]
+      },
+      {
+        "name": "Dakata",
+        "x": -0.5833333333333334,
+        "y": 0.63,
+        "type": "Exterminate",
+        "kind": "mission",
+        "level": "28–30",
+        "faction": "Grineer",
+        "tileset": "Grineer Asteroid Fortress",
+        "to": null,
+        "links": [
+          "Koro"
+        ]
+      }
+    ],
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        7
+      ]
+    ],
+    "title": false
+  }
+}
