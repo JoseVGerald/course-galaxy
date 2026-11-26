@@ -24,8 +24,8 @@ function NameLines({name}:{name:string}){return <>{(displayNameLines[name]||[dis
 function App(){
  const stage=useRef<HTMLDivElement>(null),canvas=useRef<HTMLDivElement>(null),audio=useRef<HTMLAudioElement>(null),orbitGrid=useRef<SVGSVGElement>(null),routeGeometry=useRef<SVGGElement>(null);
  const labels=useRef(new Map<string,HTMLButtonElement>()),graph=useRef<HTMLDivElement>(null),title=useRef<HTMLDivElement>(null),sun=useRef<HTMLDivElement>(null),nodeElements=useRef(new Map<string,HTMLButtonElement>()),remotePreviewLines=useRef(new Map<string,SVGGElement>()),remotePreviewNodes=useRef(new Map<string,SVGGElement>()),card=useRef<HTMLDivElement>(null),tooltipRef=useRef<Selection|null>(null);
- const anim=useRef<{to:CameraPose;done?:()=>void}|null>(null),hoverTimer=useRef<ReturnType<typeof setTimeout>|undefined>(undefined),focusRef=useRef<Planet|null>(null),mapRef=useRef<Planet|null>(null),freePose=useRef<CameraPose|null>(null),freeMap=useRef<Planet|null>(null),drag=useRef<{x:number;y:number;px:number;py:number;didMove:boolean}|null>(null),suppressPlanetClick=useRef(false),scaleRef=useRef(1),releaseAfterClick=useRef(false);
- const moveCamera=useCallback((to:CameraPose,done?:()=>void)=>{const previous=anim.current?.done;anim.current={to:{...to},done:previous&&done?()=>{previous();done()}:previous||done}},[]);
+ const anim=useRef<{to:CameraPose;done?:()=>void;isZoom?:boolean}|null>(null),hoverTimer=useRef<ReturnType<typeof setTimeout>|undefined>(undefined),focusRef=useRef<Planet|null>(null),mapRef=useRef<Planet|null>(null),freePose=useRef<CameraPose|null>(null),freeMap=useRef<Planet|null>(null),drag=useRef<{x:number;y:number;px:number;py:number;didMove:boolean}|null>(null),suppressPlanetClick=useRef(false),scaleRef=useRef(1),releaseAfterClick=useRef(false);
+ const moveCamera=useCallback((to:CameraPose,done?:()=>void,isZoom=false)=>{const previous=anim.current?.done;anim.current={to:{...to},isZoom,done:previous&&done?()=>{previous();done()}:previous||done}},[]);
  const [focus,setFocus]=useState<Planet|null>(null),[mapPlanet,setMapPlanet]=useState<Planet|null>(null),[ready,setReady]=useState(false),[webglError,setWebglError]=useState(false),[hovered,setHovered]=useState<Selection|null>(null),[selected,setSelected]=useState<Selection|null>(null),[planetHover,setPlanetHover]=useState<string|null>(null);
  const [panel,setPanel]=useState<string|null>(null),[match,setMatch]=useState('PUBLIC'),[matchMenu,setMatchMenu]=useState(false),[muted,setMuted]=useState(true),[moving,setMoving]=useState(true),[chat,setChat]=useState(false),[tab,setTab]=useState('Clan'),[help,setHelp]=useState(false),[toast,setToast]=useState(''),[started,setStarted]=useState(false);
  const say=useCallback((t:string)=>{setToast(t);window.setTimeout(()=>setToast(''),3500)},[]);
@@ -53,14 +53,19 @@ function App(){
   freePose.current=null;freeMap.current=null;view.amount=0;
   moveCamera(overviewPose);
  },[moveCamera]);
- const zoomAt=useCallback((factor:number,px:number,py:number)=>{
+ const zoomAt=useCallback((factor:number,px=960,py=540)=>{
   setHovered(null);setSelected(null);
   const prior=currentPose();
   const locked=focusRef.current;
-  const freeMin=.78;
-  const max=Infinity,min=locked?focusPose(locked).zoom*.60:freeMin,requested=prior.zoom*factor;
-  const zoom=prior.zoom>max?factor>1?prior.zoom:Math.max(max,requested):Math.max(min,Math.min(max,requested)),ratio=zoom/prior.zoom;
-  const to={...prior,frame:Math.max(0,Math.min(1,(1-zoom)/.32)),zoom,cameraX:px-(px-prior.cameraX-prior.panX)*ratio,cameraY:py-(py-prior.cameraY-prior.panY)*ratio,panX:0,panY:0};
+  const min = locked ? focusPose(locked).zoom * .60 : .78;
+  const pendingZoom = anim.current?.isZoom ? anim.current.to.zoom : prior.zoom;
+  const zoom = Math.max(Math.min(min, pendingZoom), pendingZoom * factor);
+  const ratio = zoom / prior.zoom;
+  const anchor = locked ? placement(locked) : {x:960,y:540};
+  const to={...prior,frame:Math.max(0,Math.min(1,(1-zoom)/.32)),zoom,
+   cameraX:anchor.x-(anchor.x-prior.cameraX-prior.panX)*ratio,
+   cameraY:anchor.y-(anchor.y-prior.cameraY-prior.panY)*ratio,
+   panX:0,panY:0};
   const candidate=locked?null:planets.filter(p=>!systemMoonParents[p.name]).map(p=>({p,distance:Math.hypot(p.x*prior.zoom+prior.cameraX+prior.panX-px,p.y*prior.zoom+prior.cameraY+prior.panY-py)})).filter(v=>v.distance<v.p.r*prior.zoom+48&&v.p.r*zoom>detailRadius(v.p)).sort((a,b)=>a.distance-b.distance)[0]?.p;
   const previousMap=mapRef.current,v=chartViewport(innerWidth,innerHeight),previousX=previousMap?previousMap.x*zoom+to.cameraX+to.panX:0,previousY=previousMap?previousMap.y*zoom+to.cameraY+to.panY:0;
   const previousVisible=!!previousMap&&previousMap.r*zoom>detailRadius(previousMap)&&previousX+previousMap.r*zoom>-v.offsetX&&previousX-previousMap.r*zoom<1920+v.offsetX&&previousY+previousMap.r*zoom>-v.offsetY&&previousY-previousMap.r*zoom<1080+v.offsetY;
@@ -68,7 +73,7 @@ function App(){
   if(detailed)mapRef.current=detailed;
   else mapRef.current=null;
   view.focus=locked?.name||null;view.detail=detailed?.name||null;to.amount=locked?1:0;
-  setMapPlanet(detailed||null);moveCamera(to);
+  setMapPlanet(detailed||null);moveCamera(to,undefined,true);
  },[moveCamera]);
  const back=useCallback(()=>{if(selected){setSelected(null);setHovered(null)}else if(panel){setPanel(null)}else if(help){setHelp(false)}else if(focusRef.current){leave()}else{leave()}},[selected,panel,help,leave]);
  useEffect(()=>{if(!canvas.current)return;return createEngine(canvas.current,()=>setReady(true),()=>{setReady(true);setWebglError(true)})},[]);
@@ -78,7 +83,7 @@ function App(){
  useEffect(()=>{
   let raf=0,last=performance.now();const tick=(now:number)=>{
    const dt=Math.min(50,now-last);last=now;
-   if(anim.current){const a=anim.current,alpha=1-Math.exp(-Math.min(dt,50)/75);let settled=true;for(const key of cameraKeys){const d=key==='zoom'?Math.log(a.to.zoom/view.zoom):a.to[key]-view[key];if(key==='zoom')view.zoom*=Math.exp(d*alpha);else view[key]+=d*alpha;if(Math.abs(d)>(key==='zoom'?.00001:.001))settled=false}if(settled){for(const key of cameraKeys)view[key]=a.to[key];anim.current=null;a.done?.()}}
+   if(anim.current){const a=anim.current,alpha=1-Math.exp(-Math.min(dt,50)/75);let settled=true;for(const key of cameraKeys){const logarithmicZoom=key==='zoom'&&!a.isZoom;const d=logarithmicZoom?Math.log(a.to.zoom/view.zoom):a.to[key]-view[key];if(logarithmicZoom)view.zoom*=Math.exp(d*alpha);else view[key]+=d*alpha;if(Math.abs(d)>(key==='zoom'?.00001:.001))settled=false}if(settled){for(const key of cameraKeys)view[key]=a.to[key];anim.current=null;a.done?.()}}
    for(const p of planets){const el=labels.current.get(p.name);if(!el)continue;const pos=placement(p),isSelected=view.focus===p.name,moon=!!systemMoonParents[p.name],overviewVisible=systemOverviewNames.has(p.name)||view.zoom>1.12||!!focusRef.current;el.style.left=pos.x+'px';el.style.top=pos.y+'px';el.style.setProperty('--radius',pos.r+'px');el.style.opacity=String(overviewVisible?(isSelected?Math.max(0,1-view.amount*2.7):pos.opacity):0);el.style.pointerEvents=moon?'none':overviewVisible?(focusRef.current?(pos.opacity>.2&&!isSelected?'auto':'none'):'auto'):'none';el.classList.toggle('detail-active',mapRef.current?.name===p.name);el.style.setProperty('--label-fade',String(view.hover&&view.hover!==p.name?.40:1));}
    const f=focusRef.current||mapRef.current;
    if(f&&graph.current){const pos=placement(f),start=detailRadius(f),full=detailFullRadius(f),alpha=Math.max(0,Math.min(1,(pos.r-start)/(full-start))),textStart=start+4,textFull=Math.max(textStart+20,f.r*2.25);graph.current.style.transform=`translate(${pos.x}px,${pos.y}px)`;graph.current.style.opacity=String(alpha);graph.current.style.pointerEvents=alpha>.6?'auto':'none';graph.current.style.setProperty('--node-text-opacity',String(Math.max(0,Math.min(1,(pos.r-textStart)/(textFull-textStart)))));routeGeometry.current?.setAttribute('transform',`scale(${pos.r/345})`);for(const n of f.nodes){const el=nodeElements.current.get(n.name);if(el){el.style.left=n.x*pos.r+'px';el.style.top=n.y*pos.r+'px'}}}
@@ -91,7 +96,7 @@ function App(){
    raf=requestAnimationFrame(tick);
   };raf=requestAnimationFrame(tick);return()=>cancelAnimationFrame(raf);
  },[]);
- useEffect(()=>{const key=(e:KeyboardEvent)=>{if((e.target as HTMLElement).matches('input,textarea'))return;if(e.key==='Escape'){e.preventDefault();back()}else if(e.key.toLowerCase()==='h'){setHelp(v=>!v)}else if(e.key.toLowerCase()==='m'){setMuted(v=>!v)}else if(e.key==='Home'){leave()}else if(e.key==='-'||e.key==='_'){zoomAt(1/1.15,960,540)}else if(e.key==='+'||e.key==='='){zoomAt(1.15,960,540)}else if(e.key.toLowerCase()==='f'){if(!document.fullscreenElement)document.documentElement.requestFullscreen?.().catch(()=>{});else document.exitFullscreen?.()}else if(e.key==='Tab'){setStarted(true)}};addEventListener('keydown',key);return()=>removeEventListener('keydown',key)},[back,leave,zoomAt]);
+ useEffect(()=>{const key=(e:KeyboardEvent)=>{if((e.target as HTMLElement).matches('input,textarea'))return;if(e.key==='Escape'){e.preventDefault();back()}else if(e.key.toLowerCase()==='h'){setHelp(v=>!v)}else if(e.key.toLowerCase()==='m'){setMuted(v=>!v)}else if(e.key==='Home'){leave()}else if(e.key==='-'||e.key==='_'){zoomAt(1/1.15)}else if(e.key==='+'||e.key==='='){zoomAt(1.15)}else if(e.key.toLowerCase()==='f'){if(!document.fullscreenElement)document.documentElement.requestFullscreen?.().catch(()=>{});else document.exitFullscreen?.()}else if(e.key==='Tab'){setStarted(true)}};addEventListener('keydown',key);return()=>removeEventListener('keydown',key)},[back,leave,zoomAt]);
  useEffect(()=>{view.motion=moving},[moving]);
  useEffect(()=>{if(!audio.current)return;audio.current.volume=.20;if(!muted)audio.current.play().catch(()=>setMuted(true));else audio.current.pause()},[muted]);
  const nodeEnter=(planet:Planet,node:Mission,index:number)=>{clearTimeout(hoverTimer.current);hoverTimer.current=setTimeout(()=>setHovered({planet,node,index}),motion.tooltipDelay)};

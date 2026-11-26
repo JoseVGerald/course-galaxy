@@ -14,7 +14,7 @@ The top and bottom navigation bars and the original stylesheet are preserved. Re
 - `src/planet-materials.ts`: image-free GPU materials for terrain, craters, fractures, landmasses, weather bands, atmospheric scattering, cloud shells and planetary rings.
 - `src/reference-layouts.json`: reference-derived node coordinates and documented mission metadata. Text is rendered live, without label crops.
 
-Click a planet, use the wheel to zoom toward the pointer, drag to pan, and use Zoom Out to return to the system framing. `+` / `-` adjust scale; `Home` or right click returns; `H` shows controls.
+Click a planet, use the wheel to zoom around the selected planet or the center of the overview, drag to pan, and use Zoom Out to return to the system framing. `+` / `-` adjust scale; `Home` or right click returns; `H` shows controls.
 
 ## Sources and fidelity
 
